@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Saira:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">  
+
+    <title>Forms</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>&Ucirc;nderground&hyphen;&#627;ation</h1>
+        <!--&Umacr;nderground <br> &#534;nderground-->
+        
+            <nav>
+                <div class="nav">
+                    <img class="calender" src="assets/icons/calendar.png" height="20" width="20" alt="">
+                        <a class="dates" href="">dates</a>
+                    <img class="globe" src="assets/icons/globe.png" height="20" width="20" alt="">
+                        <a class="tips" href="#">directions</a>
+                    <img class="globe_2" src="assets/icons/globe_2.png" height="20" width="20" alt="">
+                        <a class="countries" href="#">countries</a>
+                </div>
+            </nav>
+        </div>
+        
+    </header>
+    <main>
+        <form action="POST">
+            <div class="overlay_hidden" id="mask_overlay"></div>
+            <h2>
+                Create a &Ucirc;&hyphen;&#627; account
+            </h2>
+            <h3>
+                ... and follow the leads.
+            </h3>
+            <p class="accountExplain">
+                You need an account, to search our hidden clues.
+                <a href="#">Learn more</a>
+            </p>
+            <p class="signIn">
+                Already have an account?
+                <a href="#">Sign In</a>
+            </p>
+            <div class="container">
+                <div class="personalia">
+                    <label for="email" class="label">Email *</label>
+                    <input type="email" name="email" class="field" id="email" size="55">
+
+                    <label for="username" class="label">Username *</label>
+                    <input type="text" name="username" class="field" id="username" size="55">
+
+                    <label for="phone" class="label">Phone (recommended)</label>
+                    <input type="tel" name="phone" id="phone" class="field" size="55">
+
+                    <label for="password" class="labelPsw">Password *</label>
+                    <label for="password" class="labelShow"><img src="assets/icons/eye_green.png" height=22 width="22" alt=""><p>Show</p></label>
+                    <input type="password" name="password" class="field" id="password" size="55">
+                </div>
+            
+                <div class="pwRules">
+                    <ul class="leftList">
+                        <li><img src="assets/icons/square_green_2.png" height="8" width="8" alt="">&nbsp; One lowercase character</li>
+                        <li><img src="assets/icons/square_green_2.png" height="8" width="8" alt="">&nbsp; One uppercase character</li>
+                    </ul>
+                    <ul class="rightList">
+                        <li><img src="assets/icons/square_green_2.png" height="8" width="8" alt="">&nbsp; One number</li>
+                        <li><img src="assets/icons/square_green_2.png" height="8" width="8" alt="">&nbsp; 8 characters minimum</li>
+                    </ul>
+                </div>
+                
+                <div class="subscription">
+                    <input type="submit" value="Create Account" class="button" id="create">
+
+                    <div class="info">
+                        <label class="container">
+                           <input type="checkbox" name="info" class="contact" id="info" value="info" checked>
+                           <span class="checkmark"></span>
+                        </label>
+                        <div for="info" class="contactLabel">
+                            <p class="subText">Yes, I want to receive mails<br>and stay informed about<br>upcomming activities</p>
+                        </div>              
+                    </div>
+                </div>
+
+                <div class="regionSelector">
+                    <p class="regionText">
+                        <img src="assets/icons/square_green_2.png" height="8" width="8" alt="">
+                        &nbsp;You can select your 
+                        <span id="region_btn">regions</span>
+                        to receive personalized info.
+                    </p>
+                    <!-- 
+                    <div class="popUp">
+                        <select name="continents" id="region">Regions
+                            <option value="1">West-Europe</option>
+                            <option value="2">U.K.</option>
+                            <option value="3">East-Europe</option>
+                            <option value="4">Russia</option>
+                            <option value="5">China</option>
+                            <option value="6">Asia</option>
+                            <option value="7">Australia</option>
+                            <option value="8">North-Africa</option>                                
+                            <option value="9">Central-Africa</option>
+                            <option value="10">South-Africa</option>
+                            <option value="11">Canada (or Alaska)</option>
+                            <option value="12">North-America</option>
+                            <option value="13">Cenntral-America</option>
+                            <option value="14">South-America</option>
+                        </select>
+                    </div>
+                    -->
+                    <div class="popup_hidden" id="popUp">
+                        <h3 class="regionLabel" id="region">Regions</h3>
+                        <div class="popUpFlex">
+                            <div class="regionsLeft">
+                                <div class="region">
+                                    <input type="checkbox" name="w_eu" class="region" id="w_eu" value="1" checked>
+                                    <label for="w_eu" class="landLabel">West-Europe</label>
+                                </div>
+
+                                <div class="region">
+                                    <input type="checkbox" name="uk" class="region" id="uk" value="2">
+                                    <label for="uk" class="landLabel">U.K.</label>
+                                </div>
+
+                                <div class="region">
+                                    <input type="checkbox" name="e_eu" class="region" id="e_eu" value="3">
+                                    <label for="e_eu" class="landLabel">East-Europe</label>
+                                </div>
+
+                                <div class="region">
+                                    <input type="checkbox" name="rus" class="region" id="rus" value="4">
+                                    <label for="rus" class="landLabel">Russia</label>
+                                </div>
+
+                                <div class="region">
+                                    <input type="checkbox" name="china" class="region" id="china" value="5">
+                                    <label for="china" class="landLabel">China</label>
+                                </div>
+
+                                <div class="region">
+                                    <input type="checkbox" name="asia" class="region" id="asia" value="6">
+                                    <label for="asia" class="landLabel">Asia</label>
+                                </div>
+
+                                <div class="region">
+                                    <input type="checkbox" name="austr" class="region" id="austr" value="7">
+                                    <label for="austr" class="landLabel">Australia</label>
+                                </div>
+                            </div>
+                            <div class="regionsRight">
+                                <div class="region">
+                                    <input type="checkbox" name="n_af" class="region" id="n_af" value="8">
+                                    <label for="n_af" class="landLabel">North-Africa</label>
+                                </div>
+
+                                <div class="region">
+                                        <input type="checkbox" name="c_af" class="region" id="c_af" value="9">
+                                    <label for="c_af" class="landLabel">Central-Africa</label>
+                                </div>
+
+                                <div class="region">
+                                    <input type="checkbox" name="s-Af" class="region" id="s_af" value="10">
+                                    <label for="s_af" class="landLabel">South-Africa</label>
+                                </div>
+
+                                <div class="region">
+                                    <input type="checkbox" name="can" class="region" id="can" value="11">
+                                    <label for="can" class="landLabel">Canada (& Alaska)</label>
+                                </div>
+
+                                <div class="region">
+                                    <input type="checkbox" name="n_am" class="region" id="n_am" value="12">
+                                    <label for="n_am" class="landLabel">North-America</label>
+                                </div>
+
+                                <div class="region">
+                                    <input type="checkbox" name="c_am" class="region" id="c-am" value="13">
+                                    <label for="c_am" class="landLabel">Cenntral-America</label>
+                                </div>
+
+                                <div class="region">
+                                    <input type="checkbox" name="s_am" class="region" id="s_Am" value="14">
+                                    <label for="s_am" class="landLabel">South-America</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>  
+
+            <div class="terms">
+                <p class="termsText">
+                    By clicking the 'Create account' button, you are
+                    <br>creating a &Ucirc;nderground&hyphen;&#627;ation account.
+                </p>
+                <p class="termsText">
+                    And you agree to our 
+                    <a href="">Terms</a>
+                    and our
+                    <a href="">Privacy Policy</a>.
+                </p>
+            </div>
+            
+        </form>
+        <footer>
+            <img src="assets/icons/square_green_2.png" height="4" width="4" alt="">
+            <p id="rights"></p>
+            <img src="assets/icons/square_green_2.png" height="4" width="4" alt="">
+        </footer>
+    </main>
+    
+
+    <script src="js/copyright.js"></script>
+    <script src="js/regions.js"></script>
+</body>
+</html>

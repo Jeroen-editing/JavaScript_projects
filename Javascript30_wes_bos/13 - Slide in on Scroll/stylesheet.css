@@ -1,0 +1,126 @@
+html {
+    box-sizing: border-box;
+    background: no-repeat top url("img/sky-01-high.jpg"), no-repeat center url("img/sky-02-high.jpg"), no-repeat bottom url("img/sky-03-high.jpg");
+    background-size: contain, contain, contain;
+}
+
+body {
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1 {
+    margin-top: 20px;
+    padding: 6px 0;
+    color: #acafb7;
+    font-family: 'K2D', sans-serif;
+    font-size: 88px;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 2px 1px 1px #000000;
+    background: linear-gradient(135deg, rgba(1,100,130,1) 0%, rgba(0,99,79,1) 80%);
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0 0 2px black;
+}
+
+.top {
+    margin: -30px 0 20px 0;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0 0 2px black;
+}
+
+.site-wrap {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #c9c9c9;
+    padding: 40px;
+    text-align: justify;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-shadow: 0 0 6px #000000;
+}
+
+.startLetter {
+    height: 66px;
+    width: 66px;
+    margin: -20px 16px 0 0;
+    padding-top: 2px;
+    float: left;
+    color: #a3a3a3;
+    font-family: 'KoHo', sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+    text-shadow: 0 0 4px black;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(101,64,1,1) 0%, rgba(101,90,0,1) 80%);
+    border: 0.12rem solid #213535;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    box-shadow: 0 0 2px black;
+}
+
+.site-wrap > p {
+    margin-bottom: 48px;
+    padding: 12px 16px;
+    color: white;
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-shadow: 2px 1px 2px black, -2px -1px 2px black;
+    background: rgba(59, 89, 152, 0.6);
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0 0 2px black;
+}
+
+.site-wrap > .underTitle {
+    max-height: 8px;
+    margin-top: 2px;
+    background: linear-gradient(135deg, rgba(1,100,130,1) 0%, rgba(0,99,79,1) 80%);
+}
+
+img {
+    border: 2px solid #173447;
+    border-radius: 4px;
+}
+
+.align-left {
+    float: left;
+    margin: 14px 20px 0 16px;
+}
+
+.align-right {
+    float: right;
+    margin: 14px 16px 0 20px;
+}
+
+.slide-in {
+    opacity: 0;
+    transition: all .5s;
+}
+
+.align-left.slide-in {
+    transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide-in {
+    transform: translateX(30%) scale(0.95);
+}
+
+.slide-in.active {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+}
+
+.site-wrap > .beforeBottom {
+    max-height: 8px;
+    margin-top: 4px;
+    background: linear-gradient(135deg, rgba(1,100,130,1) 0%, rgba(0,99,79,1) 80%);
+}

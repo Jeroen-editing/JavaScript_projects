@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <title>Films</title>
+    <link rel="icon" href="films.ico" type="image/x-icon">
+    <link rel="stylesheet" href="films.css">
+</head>
+
+<body>
+    <div class="container" id="screen">
+        <h1 class="film_title"  id="filmTitle"></h1> 
+        <section class="info_box" id="info">
+            <h2 class="sub_title inhoud_title">Beschrijving:</h2>
+            <p class="inhoud_text" id="inhoudText"></p>
+
+            <h2 class="sub_title cast_title">Cast:</h2>
+            <ul class="cast_list" id="castList"></ul>
+
+            <h2 class="sub_title foto_title">Foto:</h2>
+            <div class="image_box">
+                <img class="film_foto" id="filmFoto" src="" alt="film affiche">
+            </div>
+            
+            <h2 class="sub_title genres_title">Genres:</h2>
+            <ul class="genres_list" id="genresList"></ul>
+
+            <h2 class="sub_title rating_title">Rating:</h2>
+            <div class="rating_box" id="ratingBox"></div>
+
+            <h2 class="sub_title director_title">Regisseurs:</h2>
+            <ul class="director_list" id="directorList"></ul>
+        </section>
+        <div class="btn_box">
+            <button class="btn_inactive" id="previous">Vorige</button>
+            <button class="btn_active" id="next">Volgende</button>
+        </div>
+    </div>
+
+    <script src="films.js"></script>
+</body>
+
+</html>

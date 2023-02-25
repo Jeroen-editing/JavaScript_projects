@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0 auto;
+  width: 1440px; }
+
+.topPage {
+  display: flex;
+  box-sizing: border-box; }
+  .topPage #nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    height: 60px;
+    background-color: #8d5a2f;
+    border-bottom: 2px solid #664204; }
+    .topPage #nav .navA {
+      margin-top: 6px;
+      padding: 0 32px;
+      float: left;
+      left: 0; }
+    .topPage #nav .navB {
+      right: 0;
+      margin-top: 6px;
+      padding: 0 32px;
+      display: flex;
+      justify-content: space-evenly;
+      float: right;
+      width: 282px; }
+    .topPage #nav .navLink {
+      display: inline-block;
+      margin-left: 4px;
+      padding: 8px 12px;
+      min-height: 36px;
+      min-width: 33px;
+      font-family: 'KoHo', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
+      color: white;
+      letter-spacing: 4px;
+      text-decoration: none;
+      text-transform: capitalize;
+      text-shadow: 1px 1px 1px black;
+      background-color: rgba(144, 183, 205, 0.36);
+      border: 2px solid rgba(102, 66, 4, 0);
+      border-bottom: none;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px; }
+      .topPage #nav .navLink p {
+        padding-top: 8px; }
+      .topPage #nav .navLink:hover {
+        background-color: rgba(85, 107, 47, 0.4);
+        border: 2px solid rgba(61, 99, 99, 0.5);
+        border-bottom: none; }
+      .topPage #nav .navLink #homeIcon {
+        height: 28px;
+        width: 28px; }
+      .topPage #nav .navLink #homeIcon, .topPage #nav .navLink #menuIcon, .topPage #nav .navLink #theO {
+        margin-top: 4px; }
+      .topPage #nav .navLink #homeIcon, .topPage #nav .navLink #menuIcon {
+        opacity: 0.4; }
+        .topPage #nav .navLink #homeIcon:hover, .topPage #nav .navLink #menuIcon:hover {
+          opacity: 1; }
+
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 1440px;
+  margin-top: 62px;
+  background-image: url("../../assets/background/world-map-03.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-blend-mode: lighten; }
+  .mainPage section {
+    display: block; }
+  .mainPage .topSpace {
+    height: 40px; }
+  .mainPage .title {
+    margin-top: 18px;
+    margin-left: 4px;
+    color: #cbcbcb;
+    text-align: center;
+    font-family: Dosis, sans-serif;
+    font-size: 132px;
+    font-weight: 800;
+    letter-spacing: 22px;
+    text-shadow: 2px 2px 4px rgba(85, 107, 47, 0.6); }
+  .mainPage .spaceUnderTitle {
+    height: 12px; }
+  .mainPage .search {
+    display: flex;
+    box-sizing: content-box;
+    justify-content: center; }
+    .mainPage .search .searchBar {
+      width: 505px;
+      height: 62px;
+      border: 2px solid rgba(47, 26, 0, 0.6);
+      border-radius: 32px;
+      background: rgba(232, 231, 209, 0.66); }
+      .mainPage .search .searchBar .searchButton {
+        height: 100%;
+        width: 62px;
+        margin-left: -1px;
+        padding: 4px 6px 4px 6px;
+        border: 1px solid rgba(47, 26, 0, 0.12);
+        border-radius: 50%;
+        background-color: rgba(96, 139, 117, 0.3); }
+        .mainPage .search .searchBar .searchButton:hover {
+          background-color: rgba(0, 100, 0, 0.26); }
+      .mainPage .search .searchBar .searchWindow {
+        height: 100%;
+        padding: 0 12px;
+        font-family: 'KoHo', sans-serif;
+        font-size: 28px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none; }
+
+.searchNav {
+  font-family: 'KoHo', sans-serif; }
+  .searchNav .searchFormBox {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; }
+    .searchNav .searchFormBox .searchForm {
+      margin-bottom: 20px; }
+      .searchNav .searchFormBox .searchForm input {
+        margin: 0 10px;
+        padding: 10px 16px;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        background: rgba(232, 231, 209, 0.8);
+        border: 1px solid rgba(47, 26, 0, 0.6);
+        border-radius: 4px; }
+        .searchNav .searchFormBox .searchForm input:hover {
+          color: white;
+          background-color: rgba(0, 100, 0, 0.26);
+          text-shadow: 1px 1px 2px black; }
+  .searchNav .languageBox {
+    width: 504px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-shadow: 0 0 2px white;
+    border-radius: 8px; }
+    .searchNav .languageBox .language {
+      margin: 0 8px;
+      padding: 0 4px 2px 4px;
+      color: darkslateblue;
+      font-weight: 700;
+      text-decoration: none;
+      border: 1px solid rgba(47, 26, 0, 0); }
+      .searchNav .languageBox .language:hover {
+        color: #1d3b1d;
+        text-shadow: none;
+        border: 1px solid rgba(47, 26, 0, 0.3);
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.3); }
+
+.spaceAboveSuggestions {
+  display: block; }
+
+.suggestions {
+  margin: 20px 0 70px 0;
+  display: block; }
+  .suggestions .suggestionBox {
+    width: 90%;
+    margin: auto;
+    display: block; }
+    .suggestions .suggestionBox .suggestionsList {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0 0 30px 0; }
+      .suggestions .suggestionBox .suggestionsList .tipLink {
+        width: 202px;
+        min-height: 158px;
+        display: block;
+        box-sizing: border-box;
+        text-decoration: none;
+        margin: 0 8px;
+        border-radius: 4px;
+        border: 2px solid rgba(47, 26, 0, 0.4);
+        background: rgba(232, 231, 209, 0.6); }
+        .suggestions .suggestionBox .suggestionsList .tipLink:hover {
+          font-weight: 900;
+          text-shadow: 0 0 1px white;
+          background: rgba(66, 100, 10, 0.77);
+          border: 3px solid rgba(47, 26, 0, 0.6);
+          transform: scale(1.1);
+          transition: 0.2s ease-in-out; }
+        .suggestions .suggestionBox .suggestionsList .tipLink .photoTip {
+          height: 101px;
+          box-sizing: border-box;
+          overflow: hidden;
+          margin: 8px 8px 8px 8px;
+          border: 1px solid rgba(47, 26, 0, 0.2); }
+          .suggestions .suggestionBox .suggestionsList .tipLink .photoTip #favoFive, .suggestions .suggestionBox .suggestionsList .tipLink .photoTip #favoSix {
+            margin-top: -20px; }
+          .suggestions .suggestionBox .suggestionsList .tipLink .photoTip #favoOne, .suggestions .suggestionBox .suggestionsList .tipLink .photoTip #favoFour, .suggestions .suggestionBox .suggestionsList .tipLink .photoTip #favoEight, .suggestions .suggestionBox .suggestionsList .tipLink .photoTip #favoNine, .suggestions .suggestionBox .suggestionsList .tipLink .photoTip #favoTwelve {
+            margin-top: -8px; }
+        .suggestions .suggestionBox .suggestionsList .tipLink .link {
+          display: flex;
+          justify-content: space-around;
+          margin: -8px 8px -8px 8px;
+          font-family: 'KoHo', sans-serif;
+          font-weight: 600;
+          letter-spacing: 0.4rem; }
+          .suggestions .suggestionBox .suggestionsList .tipLink .link p {
+            color: #182623;
+            font-size: 20px; }
+          .suggestions .suggestionBox .suggestionsList .tipLink .link .linkText {
+            margin: 0 -3px 0 -8px;
+            letter-spacing: 2px;
+            text-decoration: underline;
+            text-underline-offset: 4px; }
+
+.sources {
+  margin-top: 80px;
+  padding: 18px 40px;
+  color: black;
+  font-family: 'KoHo', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px white;
+  background: url("../../assets/background/woodboard-01b.jpg"), rgba(47, 26, 0, 0.66);
+  border-top: 2px solid rgba(47, 26, 0, 0.66); }
+  .sources .thanksBox {
+    background: rgba(185, 185, 185, 0.66);
+    width: 88%;
+    margin: auto;
+    padding: 8px 8px;
+    border: 1px solid rgba(47, 26, 0, 0.4);
+    border-radius: 4px; }
+    .sources .thanksBox .thanks {
+      padding: 1px 0 1px 44px; }
+      .sources .thanksBox .thanks .icons {
+        margin-right: -1px;
+        padding-top: 2px; }
+      .sources .thanksBox .thanks p {
+        display: inline; }
+      .sources .thanksBox .thanks .no {
+        display: inline;
+        margin-right: -1px;
+        color: #224573;
+        font-weight: normal;
+        text-transform: lowercase;
+        text-shadow: 1px 1px 0 black; }
+        .sources .thanksBox .thanks .no:hover {
+          color: #3f8c43; }
+
+/*# sourceMappingURL=stylesheet.css.map */

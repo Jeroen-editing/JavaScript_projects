@@ -1,0 +1,29 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+div {
+    width: 100%;
+    padding: 100px;
+}
+
+.one {
+    background: #7b899b;
+}
+
+.two {
+    background: peru;
+}
+
+.three {
+    background: darkolivegreen;
+}
+
+button {
+    margin: 20px auto;
+    border: 6px solid #430c00;
+}

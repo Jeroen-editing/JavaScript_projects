@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex Panels 💪</title>
+  <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Chilanka|Dekko|Delius|Itim|Mali:200,300,400,500,600,700|Pangolin|Patrick+Hand|Shadows+Into+Light+Two|Short+Stack&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="panels">
+    <div class="panel panel1">
+      <p class="smallP">Hey</p>
+      <p>Let's</p>
+      <p class="smallP">Dance</p>
+    </div>
+    <div class="panel panel2">
+      <p class="smallP">Give</p>
+      <p>take</p>
+      <p class="smallP">Receive</p>
+    </div>
+    <div class="panel panel3">
+      <p class="smallP">Experience</p>
+      <p>it</p>
+      <p class="smallP">Today</p>
+    </div>
+    <div class="panel panel4">
+      <p class="smallP">Give</p>
+      <p>all</p>
+      <p class="smallP">You can</p>
+    </div>
+    <div class="panel panel5">
+      <p class="smallP">Life</p>
+      <p>in</p>
+      <p class="smallP">Motion</p>
+    </div>
+  </div>
+
+  <script>
+
+    const panels = document.querySelectorAll('.panel');
+
+    function toggleOpen() {
+
+      this.classList.toggle('open');
+    }
+
+    function toggleActive(e) {
+      //console.log(e.propertyName);
+      if(e.propertyName.includes('flex')) {
+
+        this.classList.toggle('open-active');
+      }
+    }
+
+    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+    panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+
+  </script>
+
+</body>
+</html>

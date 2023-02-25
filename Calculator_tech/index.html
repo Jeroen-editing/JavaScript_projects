@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatir</title>
+
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Dosis:200,300,400,500,600,700,800|
+    |Exo+2:100,200,300,400,500,600,700,800,900|K2D:100,200,300,400,500,600,700,800|
+    |Oxanium:200,300,400,500,600,700,800|Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="titleSection">
+        <div class="titleBox">
+            <h1 class="title">Calculator</h1>
+            <div class="lineUnderTitle"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="mainSection">
+            <div class="machine">
+                <div class="topMachine">
+                    <div class="screen">
+                        <div class="operation">
+                            <p class="value" id="operation"></p>
+                        </div>
+                        <div class="formula">
+                            <p class="value" id="result">0123456789</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="keyboard input" id="keyboard">
+                    <!-- Keys in Javascript-->
+                    <!--
+                    <div class="buttonRow">
+                    </div>
+                    <div class="buttonRow">
+                    </div>
+                    <div class="buttonRow">
+                    </div>
+                    <div class="buttonRow">
+                    </div>
+                    -->
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="copyrightsSection">
+        <div class="copyAndRights">
+            <div class="copy_rights">
+                <span class="copy">&copy;</span>
+                <div class="day" id="day"></div>
+                <span class="dot">●</span>
+                <div class="date" id="date"></div>
+                <span class="dot">●</span>
+                <div class="loginHour" id="hour"></div>
+                <span class="dot">●</span>
+                <a href="https://www.linkedin.com/in/jeroen-de-vos-39258718b/" class="name">Jeroen De Vos
+                    <span class="tooltiptext">Visit my LinkedIn profile
+                        <span class="arrow"></span>
+                    </span>
+                </a>
+                <span class="copy">&copy;</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="calculator.js"></script>
+    <script src="copy_rights.js"></script>
+</body>
+</html>

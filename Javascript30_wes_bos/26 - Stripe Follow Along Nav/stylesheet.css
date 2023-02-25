@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #660003 0%, rgba(255, 26, 102, 0) 70%), linear-gradient(135deg, #043b62 10%, rgba(6, 67, 249, 0) 80%), linear-gradient(225deg, #005c39 10%, rgba(13, 242, 89, 0) 80%), linear-gradient(315deg, #614a00 100%, rgba(249, 158, 31, 0) 70%);
+  background-size: contain; }
+  body header {
+    display: flex;
+    justify-content: center; }
+    body header .asideTopLeft {
+      width: 280px;
+      height: 220px;
+      background: rgba(0, 60, 74, 0.22); }
+    body header .titleBox {
+      width: 100%;
+      height: 220px;
+      margin: 0 auto;
+      padding: 20px 0;
+      background: rgba(0, 0, 0, 0.4);
+      border-left: 2px solid #cccccc;
+      border-right: 2px solid #cccccc; }
+      body header .titleBox h1, body header .titleBox h2 {
+        margin: 20px 0 20px -25px;
+        color: #d3d3d3;
+        letter-spacing: 4px;
+        text-align: center; }
+      body header .titleBox h1 {
+        padding-top: 1.4rem;
+        font-size: 48px;
+        text-transform: capitalize; }
+      body header .titleBox h2 {
+        padding: 0.8rem 0 2rem 0;
+        font-size: 28px; }
+    body header .asideTopRight {
+      width: 280px;
+      height: 220px;
+      background: rgba(0, 60, 74, 0.22); }
+  body nav {
+    position: relative;
+    perspective: 600px;
+    background: linear-gradient(90deg, rgba(17, 43, 67, 0.77), rgba(36, 110, 162, 0.77), rgba(17, 43, 67, 0.77));
+    box-shadow: 0 0 4px 2px black; }
+    body nav .cool {
+      list-style: none;
+      margin: 0;
+      padding: 8px 0;
+      display: flex;
+      justify-content: center; }
+      body nav .cool > li {
+        position: relative;
+        display: flex;
+        justify-content: center; }
+        body nav .cool > li > a {
+          display: inline-block;
+          margin: 12px 20px;
+          padding: 12px 44px;
+          color: #40b9b7;
+          font-size: 20px;
+          letter-spacing: 4px;
+          text-decoration: none;
+          text-shadow: 1px 1px 2px black;
+          background: rgba(72, 12, 0, 0.88);
+          border: 1px solid #0098b8;
+          border-radius: 3px;
+          box-shadow: 0 0 2px 1px black; }
+        body nav .cool > li > a:hover {
+          color: #ffc400;
+          background: #267251; }
+      body nav .cool .middleList {
+        margin: 0 88px; }
+    body nav .dropdown {
+      opacity: 0;
+      position: absolute;
+      overflow: hidden;
+      padding: 28px 32px;
+      top: -28px;
+      border-radius: 2px;
+      transition: all 0.5s;
+      transform: translateY(100px);
+      will-change: opacity;
+      display: none;
+      z-index: 5; }
+      body nav .dropdown .bio {
+        min-width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.7; }
+        body nav .dropdown .bio img {
+          float: left;
+          height: 152px;
+          width: 116px;
+          border: 2px solid rgba(72, 12, 0, 0.88);
+          border-top-left-radius: 6px;
+          border-bottom-left-radius: 6px; }
+        body nav .dropdown .bio .meBox {
+          width: 420px;
+          height: 152px;
+          padding: 6px 6px 6px 14px;
+          background: rgba(27, 55, 55, 0.44);
+          border: 2px solid rgba(72, 12, 0, 0.88);
+          border-left: none;
+          border-top-right-radius: 6px;
+          border-bottom-right-radius: 6px; }
+          body nav .dropdown .bio .meBox p {
+            color: white;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 300;
+            letter-spacing: 1px;
+            line-height: 22px; }
+    body nav .courses {
+      list-style: none;
+      overflow: hidden;
+      font-size: 18px;
+      border: 2px solid rgba(72, 12, 0, 0.88);
+      border-radius: 5px; }
+      body nav .courses li {
+        display: flex;
+        border-bottom: 1px solid rgba(72, 12, 0, 0.88); }
+        body nav .courses li .code {
+          width: 188px;
+          padding: 6px 12px;
+          font-family: 'Nunito', sans-serif;
+          letter-spacing: 1px;
+          font-weight: 800;
+          text-align: right;
+          background: rgba(135, 187, 190, 0.66); }
+        body nav .courses li a {
+          width: 347px;
+          padding: 6px 12px;
+          color: #ffc400;
+          font-family: 'Muli', sans-serif;
+          font-weight: 400;
+          letter-spacing: 1px;
+          text-align: left;
+          text-decoration: none;
+          background: rgba(27, 55, 55, 0.44); }
+        body nav .courses li a:hover {
+          color: #feffc1;
+          text-shadow: 1px 1px 2px black;
+          background: rgba(4, 85, 0, 0.88); }
+      body nav .courses .last {
+        border-bottom: none; }
+    body nav .dropdown3 {
+      padding: 28px 32px 0 32px;
+      list-style: none; }
+      body nav .dropdown3 li {
+        margin-bottom: 28px;
+        overflow: hidden;
+        border: 2px solid rgba(72, 12, 0, 0.88);
+        border-radius: 6px;
+        /* Matches Twitter, TWITTER, twitter, tWitter, TWiTTeR... */ }
+        body nav .dropdown3 li .button {
+          display: flex;
+          overflow: hidden;
+          height: 50px;
+          text-decoration: none; }
+          body nav .dropdown3 li .button .iconBox {
+            display: inline-block;
+            height: 50px;
+            min-width: 65px;
+            padding: 5px 12px 0 12px;
+            background: rgba(27, 55, 55, 0.66);
+            border-radius: 0; }
+            body nav .dropdown3 li .button .iconBox img {
+              height: 40px;
+              width: 40px; }
+            body nav .dropdown3 li .button .iconBox .githubImg {
+              height: 32px;
+              width: 32px;
+              margin: 5px 0 0 4px;
+              border-radius: 4px; }
+          body nav .dropdown3 li .button .lowerBox {
+            min-width: 66px; }
+          body nav .dropdown3 li .button p {
+            display: inline-block;
+            min-width: 160px;
+            height: 50px;
+            padding: 12px 12px 0 16px;
+            color: white;
+            font-family: 'Overpass', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 2px black;
+            border-radius: 0; }
+        body nav .dropdown3 li .gMail {
+          background: rgba(154, 27, 16, 0.8);
+          width: 161px; }
+        body nav .dropdown3 li .facebook {
+          background: rgba(59, 81, 144, 0.8); }
+        body nav .dropdown3 li .github {
+          background: rgba(255, 169, 0, 0.8); }
+        body nav .dropdown3 li .linkedIn {
+          background: rgba(0, 125, 178, 0.8); }
+      body nav .dropdown3 li:hover {
+        border-color: rgba(4, 85, 0, 0.88);
+        box-shadow: 0 0 4px 2px #cccccc; }
+        body nav .dropdown3 li:hover .iconBox {
+          background: rgba(4, 85, 0, 0.88); }
+    body nav .trigger-enter .dropdown {
+      display: block; }
+    body nav .trigger-enter-active .dropdown {
+      opacity: 1; }
+    body nav .dropdownBackground {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      width: 100px;
+      height: 100px;
+      opacity: 0;
+      background: linear-gradient(90deg, #112b43, #246ea2, #112b43);
+      border: 3px solid #204b30;
+      border-radius: 6px;
+      box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(23, 23, 46, 0.8), 0 5px 15px rgba(0, 0, 0, 0.8);
+      transition: all 0.3s, opacity 0.1s, transform 0.2s;
+      transform-origin: 50% 0;
+      z-index: 5; }
+      body nav .dropdownBackground.open {
+        opacity: 1; }
+      body nav .dropdownBackground .arrow {
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        display: block;
+        background: rgba(35, 105, 155, 0.92);
+        border-left: 3px solid #1a4b35;
+        border-top: 3px solid #184b37;
+        transform: translateY(-55%) rotate(45deg); }
+  body main {
+    z-index: -10; }
+    body main .inBetweenSection {
+      height: 100px;
+      background: rgba(0, 60, 74, 0.4); }
+    body main .topSection, body main .bottomSection {
+      display: flex;
+      justify-content: center;
+      z-index: -10; }
+    body main .topSection {
+      height: 930px; }
+    body main .bottomSection {
+      height: 838px; }
+    body main .asideLeft {
+      width: 280px;
+      background: rgba(0, 60, 74, 0.4); }
+    body main .topArticle, body main .bottomArticle {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin: 0 auto;
+      border: 2px solid #cccccc;
+      z-index: -10; }
+      body main .topArticle .projectsBoxTop, body main .topArticle .projectsBoxBottom, body main .bottomArticle .projectsBoxTop, body main .bottomArticle .projectsBoxBottom {
+        width: 505px;
+        margin: 120px auto;
+        background-color: rgba(36, 110, 162, 0.44);
+        border: 1px solid #cccccc;
+        border-radius: 12px;
+        box-shadow: 0 0 4px 2px black;
+        z-index: -10; }
+        body main .topArticle .projectsBoxTop h3, body main .topArticle .projectsBoxBottom h3, body main .bottomArticle .projectsBoxTop h3, body main .bottomArticle .projectsBoxBottom h3 {
+          margin: 28px 24px 44px 24px;
+          padding: 12px;
+          color: #000000;
+          font-size: 27px;
+          text-transform: uppercase;
+          text-shadow: 1px 1px 2px #d3d3d3;
+          background: rgba(204, 199, 142, 0.8);
+          border: 1px solid #0098b8;
+          border-radius: 8px; }
+        body main .topArticle .projectsBoxTop p, body main .topArticle .projectsBoxBottom p, body main .bottomArticle .projectsBoxTop p, body main .bottomArticle .projectsBoxBottom p {
+          margin: 24px 24px 24px 24px;
+          padding: 12px;
+          color: #000000;
+          font-size: 21px;
+          letter-spacing: 1px;
+          text-shadow: 1px 1px 2px #d3d3d3;
+          background: rgba(204, 204, 204, 0.8);
+          border: 1px solid #0098b8;
+          border-radius: 8px; }
+      body main .topArticle .projectsBoxTop, body main .bottomArticle .projectsBoxTop {
+        height: 700px; }
+      body main .topArticle .projectsBoxBottom, body main .bottomArticle .projectsBoxBottom {
+        height: 600px; }
+      body main .topArticle .left, body main .bottomArticle .left {
+        text-align: right; }
+      body main .topArticle .right, body main .bottomArticle .right {
+        text-align: left; }
+    body main .topArticle {
+      background: linear-gradient(45deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.06) 50%, rgba(0, 0, 0, 0.8) 100%), linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.06) 50%, rgba(0, 0, 0, 0.8) 100%), no-repeat url("img/steampunk-02.jpg");
+      background-size: contain;
+      z-index: -10; }
+    body main .bottomArticle {
+      background: linear-gradient(45deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.06) 50%, rgba(0, 0, 0, 0.8) 100%), linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.06) 50%, rgba(0, 0, 0, 0.8) 100%), no-repeat url("img/steampunk-04.jpg");
+      background-size: contain;
+      z-index: -10; }
+    body main .asideRight {
+      width: 280px;
+      background: rgba(0, 60, 74, 0.4); }
+
+/*# sourceMappingURL=stylesheet.css.map */

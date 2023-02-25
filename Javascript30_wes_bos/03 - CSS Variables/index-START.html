@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scoped CSS Variables and JS</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --base: linear-gradient(135deg, rgba(249,114,0,1) 0%, rgba(255,79,0,1) 10%, rgba(249,114,0,1) 20%, rgba(255,79,0,1) 30%,
+                                      rgba(249,114,0,1) 40%, rgba(255,79,0,1) 50%, rgba(249,114,0,1) 60%, rgba(255,79,0,1) 70%,
+                                      rgba(249,114,0,1) 80%, rgba(255,79,0,1) 90%, rgba(249,114,0,1) 100%);
+      --spacing: 10px;
+      --border-top: 2px;
+      --border-right: 2px;
+      --border-bottom: 2px;
+      --border-left: 2px;
+    }
+
+    /*
+      misc styles, nothing to do with CSS variables
+    */
+
+    body {
+      text-align: center;
+      background: #193549;
+      color: #a8a8a8;
+      font-family: 'helvetica neue', sans-serif;
+      font-weight: 100;
+    }
+
+    h1 {
+      margin: 4px 0 8px 0;
+      color: #e3e3e3;
+      font-size: 28px;
+      letter-spacing: 5px;
+      word-spacing: 12px;
+      text-shadow: 1px 1px 2px black;
+    }
+
+    .hl {
+      color: var(--base);
+    }
+
+    .controls {
+      margin: 0 auto;
+      padding: 4px 0;
+      width: 70%;
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 26px;
+    }
+
+    .lineUnder {
+      height: 0;
+      width: 44%;
+      margin-top: 2px;
+      margin-bottom: 12px;
+      border-radius: 3px;
+      background: var(--base);
+    }
+
+    .fillUp {
+      min-width: 160px;
+    }
+
+    input {
+      width: 100px;
+    }
+
+    img {
+      height: 50%;
+      width: 50%;
+      margin-top: 20px;
+      padding: var(--spacing);
+      background: var(--base);
+      border-radius: 3px;
+      border-color: darkolivegreen;
+      border-style: solid;
+      border-top-width: var(--border-top);
+      border-right-width: var(--border-right);
+      border-bottom-width: var(--border-bottom);
+      border-left-width: var(--border-left);
+    }
+  </style>
+</head>
+
+<body>
+<h1>Update <span class='hl' id="hl1">CSS Variables</span> with <span class='hl' id="hl2"><!--style="--base: #BADA55"-->JS</span></h1>
+
+  <div class="controls lineUnder"></div>
+
+  <div class="controls controls-one">
+    <div class="fillUp"></div>
+    <label for="spacing">Spacing:
+    <input id="spacing" type="range" name="spacing" min="10" max="80" value="10" data-sizing="px"></label>
+
+    <label for="base">Base Color:
+    <input id="base" type="color" name="base" value="#ff8800"></label>
+    <div class="fillUp"></div>
+  </div>
+  <div class="controls controls-two">
+    <label>Border:</label>
+    <label for="border-top">-top:
+      <input id="border-top" type="range" name="border-top" min="2" max="80" value="2" data-sizing="px"></label>
+
+    <label for="border-right">-right:
+      <input id="border-right" type="range" name="border-right" min="2" max="89" value="2" data-sizing="px"></label>
+
+    <label for="border-bottom">-bottom:
+      <input id="border-bottom" type="range" name="border-bottom" min="2" max="80" value="2" data-sizing="px"></label>
+
+    <label for="border-left">-left:
+      <input id="border-left" type="range" name="border-left" min="2" max="80" value="2" data-sizing="px"></label>
+
+  </div>
+
+  <img src="https://images.unsplash.com/photo-1497174086187-549250c4819d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+
+  <script>
+    const inputs = document.querySelectorAll('.controls input');
+
+    function handleUpdate() {
+      const suffix = this.dataset.sizing || '';
+      console.log(this.name);
+      document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+    }
+
+    inputs.forEach(input => input.addEventListener('change', handleUpdate));
+    inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
+
+  </script>
+
+</body>
+</html>

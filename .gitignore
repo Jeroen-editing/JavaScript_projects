@@ -2,3 +2,15 @@
 *.css.map
 *.sass.map
 *.scss.map
+
+.DS_Store/
+.DS_Store
+
+.idea
+.idea/
+
+.cache/
+
+node_modules/
+
+stylesheet.css.map

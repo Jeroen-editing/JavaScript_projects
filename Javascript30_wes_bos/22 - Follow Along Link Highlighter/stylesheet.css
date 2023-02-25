@@ -1,0 +1,105 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0; /* Important! */
+  font-family: sans-serif;
+  background:
+    linear-gradient(45deg, hsla(4, 100%, 37%, 0.8) 10%, hsla(45, 72%, 17%, 0.6) 40%),
+    linear-gradient(135deg, hsla(201, 99%, 36%, 0.8) 10%, hsla(166, 67%, 18%, 0.6) 40%),
+    linear-gradient(225deg, hsla(171, 75%, 29%, 0.8) 10%, hsla(45, 72%, 17%, 0.6) 40%),
+    linear-gradient(315deg, hsla(56, 98%, 33%, 0.8) 10%, hsla(0, 0%, 0%, 0.6) 40%);
+}
+
+.contextBox {
+  max-width: 1000px;
+  min-height: 1040px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-image: url("http://unsplash.it/1000/1040");
+  z-index: -10;
+}
+
+.highlight {
+  transition: all 0.2s;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 2px solid rgb(209, 255, 67);
+  border-bottom: 2px solid rgb(209, 255, 67);
+  border-radius: 6px;
+  background: rgba(38, 164, 113, 0.06);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 0;
+}
+
+.highlight > a {
+  color: rgba(42, 21, 7, 0.92);
+}
+
+.menu {
+  max-width: 1000px;
+  max-height: 60px;
+  display: flex;
+  justify-content: space-around;
+  margin: 78px auto;
+  padding: 12px 0;
+  list-style: none;
+  background-color: rgba(23, 52, 71, 0.6);
+  border-top: 1px solid #0f2751;
+  border-bottom: 1px solid #0f2950;
+
+}
+
+.menu a {
+  display: inline-block;
+  //margin: 0 28px;
+  padding: 10px 18px 6px 18px;
+  color: #ececec;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px black;
+  background-color: rgba(32, 71, 98, 0.61);
+  border-radius: 6px;
+
+}
+
+.menu a:hover {
+  color: rgba(177, 89, 30, 0.92);
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  color: #e3e3e3;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px black;
+  letter-spacing: 1px;
+  line-height: 2;
+  position: relative;
+  background-color: rgba(23, 52, 71, 0.9);
+
+}
+
+.wrapper a {
+  margin: 0 -6px;
+  padding: 4px 6px 3px 6px;
+  text-decoration: none;
+  color: #b89906;
+  background: rgba(0,0,0,0.05);
+  border-radius: 6px;
+}
+
+.wrapper a:hover {
+  color: rgba(177, 89, 30, 0.92);
+}

@@ -1,0 +1,407 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  width: 1280px;
+  margin: 0 auto;
+  padding-top: 20px;
+  background: #dadada; }
+
+.titleSection {
+  min-width: 550px;
+  margin: 0 auto;
+  display: block; }
+
+.titleBox {
+  min-width: 550px;
+  padding: 20px 0 22px 0;
+  margin: 0 auto;
+  flex-direction: column;
+  align-content: space-between;
+  background: #829696;
+  border: 2px solid #333a3f; }
+  .titleBox h1 {
+    color: #333a3f;
+    font-family: 'Audiowide', sans-serif;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 1px 1px 0 #c49441; }
+  .titleBox .lineUnderTitle {
+    height: 4px;
+    width: 319px;
+    margin: 4px auto;
+    background: #333a3f;
+    box-shadow: 1px 1px 0 #c49441; }
+
+main {
+  display: block; }
+
+.mainSection {
+  width: 550px;
+  padding: 40px 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background: #b3b3b3;
+  border: 2px solid #333a3f;
+  border-top: none; }
+
+.machine {
+  width: 500px;
+  height: 420px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  align-items: center;
+  justify-items: center;
+  border-radius: 8px; }
+
+.topMachine {
+  min-width: 500px;
+  min-height: 124px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  align-items: center;
+  justify-items: center;
+  background: #5c868b;
+  border: 2px solid #333a3f;
+  border-bottom-width: 4px;
+  border-bottom: none;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px; }
+  .topMachine .screen {
+    width: 460px;
+    margin: 16px 0 18px 0; }
+  .topMachine .operationBox {
+    display: flex;
+    justify-content: center;
+    height: 44px;
+    background: black;
+    border: 2px solid #333a3f;
+    border-bottom: none;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px; }
+  .topMachine .operation {
+    min-width: 440px;
+    height: 40px;
+    padding: 4px 6px 2px 2px;
+    color: #12746b;
+    color: rgba(0, 225, 225, 0.8);
+    font-family: 'Dosis', sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: right;
+    background: none; }
+    .topMachine .operation::-webkit-outer-spin-button, .topMachine .operation::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0; }
+  .topMachine .resultBox {
+    display: flex;
+    justify-content: center;
+    height: 44px;
+    background: black;
+    border: 2px solid #333a3f;
+    border-top: none;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px; }
+  .topMachine .result {
+    width: 440px;
+    height: 40px;
+    padding: 4px 6px 2px 2px;
+    color: #c28500;
+    font-family: 'Dosis', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: right; }
+
+.keyboard {
+  min-width: 500px;
+  min-height: 270px;
+  padding: 14px 0 14px 0;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  align-items: center;
+  justify-items: center;
+  background: #829696;
+  border: 2px solid #333a3f;
+  border-top: none;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px; }
+  .keyboard .buttonRow {
+    display: flex;
+    justify-items: center; }
+  .keyboard .square {
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    margin: 3px 3px;
+    background-color: darkgray;
+    border: 1px solid #333a3f;
+    border-radius: 6px;
+    box-shadow: 0 0 2px 1px #525252, 0 0 1px #323232; }
+    .keyboard .square:hover {
+      background: rgba(168, 122, 0, 0.6);
+      box-shadow: none; }
+  .keyboard p {
+    margin: 5px 0 0 0;
+    color: black;
+    font-family: 'Russo One', sans-serif;
+    font-size: 42px;
+    text-align: center; }
+  .keyboard .special {
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    text-shadow: none; }
+  .keyboard .delete,
+  .keyboard .reset {
+    background: #8a2101; }
+    .keyboard .delete:hover,
+    .keyboard .reset:hover {
+      background: #245c03; }
+  .keyboard .del {
+    margin-top: 8px;
+    font-size: 33px;
+    font-weight: 100; }
+  .keyboard .aAndc {
+    margin-top: 8px;
+    font-size: 33px;
+    font-weight: 300;
+    letter-spacing: -1px; }
+  .keyboard .modulus,
+  .keyboard .powerOfTwo,
+  .keyboard .power,
+  .keyboard .square_root,
+  .keyboard .root,
+  .keyboard .factorial {
+    display: flex;
+    justify-content: space-evenly;
+    background: #0f4b79; }
+    .keyboard .modulus:hover,
+    .keyboard .powerOfTwo:hover,
+    .keyboard .power:hover,
+    .keyboard .square_root:hover,
+    .keyboard .root:hover,
+    .keyboard .factorial:hover {
+      background: #245c03; }
+    .keyboard .modulus p,
+    .keyboard .powerOfTwo p,
+    .keyboard .power p,
+    .keyboard .square_root p,
+    .keyboard .root p,
+    .keyboard .factorial p {
+      font-size: 33px;
+      font-weight: 100; }
+  .keyboard .modulus .mod {
+    margin-top: 22px;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: -1px; }
+  .keyboard .powerOfTwo .powerX,
+  .keyboard .power .powerX {
+    margin: 8px 0 0 4px;
+    font-size: 36px;
+    font-weight: 300; }
+  .keyboard .powerOfTwo .powerY,
+  .keyboard .power .powerY {
+    margin: 1px 0 0 -11px;
+    font-size: 18px; }
+  .keyboard .square_root .rootY,
+  .keyboard .root .rootY {
+    margin: 2px 0 0 4px;
+    font-size: 18px; }
+  .keyboard .square_root .rootSymbol,
+  .keyboard .root .rootSymbol {
+    margin: 5px 0 0 -20px;
+    height: 42px;
+    width: 34px; }
+  .keyboard .square_root .rootX,
+  .keyboard .root .rootX {
+    margin: 14px 0 0 -22px;
+    font-size: 32px;
+    font-weight: 300; }
+  .keyboard .factorial .factX {
+    margin: 12px 0 0 6px;
+    font-size: 32px;
+    font-weight: 300; }
+  .keyboard .factorial .fact2 {
+    margin: 4px 0 0 -8px;
+    font-size: 40px;
+    font-weight: 200; }
+  .keyboard .division,
+  .keyboard .multiplication,
+  .keyboard .substraction,
+  .keyboard .addition {
+    background: #12746b; }
+    .keyboard .division p,
+    .keyboard .multiplication p,
+    .keyboard .substraction p,
+    .keyboard .addition p {
+      margin-top: -9px;
+      font-size: 52px;
+      font-weight: 300; }
+    .keyboard .division:hover,
+    .keyboard .multiplication:hover,
+    .keyboard .substraction:hover,
+    .keyboard .addition:hover {
+      background: #245c03; }
+  .keyboard .calculate {
+    background: #c28500; }
+    .keyboard .calculate p {
+      color: black;
+      font-family: 'Russo One', sans-serif;
+      margin-top: -1px;
+      font-size: 52px;
+      font-weight: 500; }
+    .keyboard .calculate:hover {
+      background: #245c03; }
+  .keyboard .procentage,
+  .keyboard .brackets,
+  .keyboard .plusMinus {
+    display: flex;
+    justify-content: space-evenly;
+    background: #0f4b79; }
+    .keyboard .procentage p,
+    .keyboard .brackets p,
+    .keyboard .plusMinus p {
+      font-size: 30px;
+      font-weight: 100; }
+    .keyboard .procentage:hover,
+    .keyboard .brackets:hover,
+    .keyboard .plusMinus:hover {
+      background: #245c03; }
+  .keyboard .procentage .roundOne {
+    margin: 0 0 0 2px;
+    font-weight: 300; }
+  .keyboard .procentage .slashTwo {
+    margin: 2px -13px 0 -14px;
+    font-size: 38px;
+    font-weight: 300; }
+  .keyboard .procentage .roundTwo {
+    margin: 19px 0 0 0;
+    font-weight: 300; }
+  .keyboard .brackets .openBracket,
+  .keyboard .brackets .closeBracket {
+    font-size: 28px;
+    margin-top: 9px;
+    font-weight: 600; }
+  .keyboard .plusMinus .plus {
+    margin: -4px 0 0 2px;
+    font-size: 32px;
+    font-weight: 400; }
+  .keyboard .plusMinus .slashOne {
+    margin: 4px -10px 0 -15px;
+    font-size: 36px;
+    font-weight: 400; }
+  .keyboard .plusMinus .min {
+    margin: 18px 0 0 -8px;
+    font-size: 32px;
+    font-weight: 400; }
+
+.copyrightsSection {
+  width: 554px;
+  margin: 0 auto;
+  display: block; }
+
+.copyAndRights {
+  min-width: 428px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  background: #829696;
+  border: 2px solid #333a3f;
+  border-top: none; }
+
+.copy_rights {
+  height: 34px;
+  width: 400px;
+  display: flex;
+  justify-items: center;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  color: #333a3f;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px #c49441; }
+  .copy_rights .dot {
+    margin: 4px -2px 0 -2px;
+    font-size: 12px; }
+  .copy_rights .copy {
+    margin: -1px -2px 0 -2px;
+    color: #333a3f;
+    font-size: 18px;
+    font-weight: 800; }
+  .copy_rights .fullDate {
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    font-weight: 600; }
+  .copy_rights .name {
+    position: relative;
+    display: inline-block;
+    color: #2e3d7c;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    word-spacing: -1px;
+    text-shadow: 1px 1px 1px #c49441; }
+    .copy_rights .name:hover {
+      color: #5f1601; }
+  .copy_rights .tooltiptext {
+    visibility: visible;
+    position: absolute;
+    opacity: 0;
+    width: 180px;
+    bottom: 100%;
+    left: 20%;
+    margin: 0 0 4px -90px;
+    padding: 5px;
+    color: #333a3f;
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 1px 1px 1px #c2c2c2;
+    background-color: #aaa064;
+    border: 2px solid #333a3f;
+    border-radius: 6px;
+    z-index: 10; }
+  .copy_rights .visible {
+    visibility: visible;
+    opacity: 1; }
+  .copy_rights .arrow {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 33px;
+    left: 47%;
+    display: block;
+    background: #aaa064;
+    border-right: 2px solid #333a3f;
+    border-bottom: 2px solid #333a3f;
+    transform: translateY(-55%) rotate(45deg); }
+  .copy_rights .loginHour .time {
+    margin: 0 1px;
+    color: #333a3f;
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline; }
+
+/*# sourceMappingURL=stylesheet.css.map */

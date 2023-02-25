@@ -1,0 +1,111 @@
+html {
+  box-sizing: border-box;
+  background: #ffc600;
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 20px;
+  font-weight: 500; }
+
+body {
+  margin: 0; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+.panels {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex; }
+
+.panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: -4px 4px 8px white;
+  /* Safari transitionend event.propertyName === flex */
+  /* Chrome + FF transitionend event.propertyName === flex-grow */
+  background-size: cover;
+  background: no-repeat center #6B0F9C;
+  border-left: 0.1rem solid darkslategray;
+  border-right: 0.1rem solid darkslategray;
+  /* background-position: center;*/
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), border 0.7s, border 0.7s, background 0.2s; }
+
+/*
+.panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
+.panel2 { background-image:url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500); }
+.panel3 { background-image:url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d); }
+.panel4 { background-image:url(https://source.unsplash.com/ITjiVXcwVng/1500x1500); }
+.panel5 { background-image:url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); }
+*/
+.panel1 {
+  background-image: url(../img/nightskytree-small2.jpg);
+  background-position-y: -444px; }
+
+.panel2 {
+  background-image: url(../img/waterfall-small2.jpg);
+  background-position-y: -350px;
+  box-shadow: inset 0 0 8px black; }
+
+.panel3 {
+  background-image: url(../img/moon-small2.jpg);
+  background-position-y: -360px; }
+
+.panel4 {
+  background-image: url(../img/moutainwaterfall-small2.jpg);
+  background-position-y: -450px;
+  box-shadow: inset 0 0 8px black; }
+
+.panel5 {
+  background-image: url(../img/desertsky-small2.jpg);
+  background-position-y: -280px; }
+
+/* Flex Children = flex items */
+.panel > * {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  transition: transform 0.5s;
+  /* border: 1px solid darkred;  temporary remove !! */ }
+
+.panel > *:first-child {
+  transform: translateY(-100%); }
+
+.panel.open-active > *:first-child {
+  transform: translateY(0); }
+
+.panel > *:last-child {
+  transform: translateY(100%); }
+
+.panel.open-active > *:last-child {
+  transform: translateY(0); }
+
+.panel p {
+  color: #7a0000;
+  font-family: 'Delius', cursive;
+  font-size: 2em;
+  font-weight: 500;
+  text-shadow: -2px 0 4px rgba(205, 205, 205, 0.8), -2px 0 14px rgba(0, 0, 0, 0.55); }
+
+.panel .smallP {
+  color: white;
+  font-size: 1.4em;
+  padding: 40px 0; }
+
+.panel p:nth-child(2) {
+  font-size: 4em; }
+
+.panel.open {
+  flex-grow: 6;
+  font-size: 50px;
+  border-left: 0.16rem solid #335555;
+  border-right: 0.16rem solid #335555; }
+
+/*# sourceMappingURL=stylesheet.css.map */

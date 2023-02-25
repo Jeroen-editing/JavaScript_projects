@@ -1,0 +1,160 @@
+* {
+  margin: 0 0;
+  padding: 0 0; }
+
+body {
+  background: #155843; }
+
+section {
+  width: 100%;
+  max-width: 44rem;
+  height: 22rem;
+  max-height: 23rem;
+  margin: 0 auto;
+  padding: 10% 0 20% 0;
+  background: black;
+  border-left: 10px solid rgba(54, 54, 54, 0.1);
+  border-bottom: 16px solid rgba(62, 62, 62, 0.06);
+  border-radius: 50%;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.9), 5px 20px 20px rgba(9, 9, 9, 0.7), 5px 30px 30px rgba(16, 16, 16, 0.5); }
+
+h1 {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 0 5% 0;
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  text-underline-offset: 5px; }
+
+.eightBall_title {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 0 1rem 0;
+  color: #134b7f;
+  font-size: 1.6rem;
+  text-align: center;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  text-underline-offset: 5px; }
+  .eightBall_title span {
+    color: #085408;
+    font-size: 1.8rem; }
+
+.text_output {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem 0 1rem 0;
+  color: #7f7f7f;
+  font-size: 1.4rem;
+  text-align: center; }
+  .text_output .name {
+    color: #4d1010; }
+  .text_output .quest {
+    color: #243263; }
+  .text_output .answer {
+    color: #2c6e3c; }
+
+.explain {
+  padding: 1rem 0 0 0;
+  color: gray;
+  font-size: 1.2rem; }
+
+.input_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto; }
+  .input_box .name_input {
+    width: 80%;
+    max-width: 16rem;
+    min-height: 1.5rem;
+    margin: .4rem 0 1rem auto;
+    padding: 0.5%;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #013f61;
+    border-right: none;
+    border-bottom-left-radius: 1.2rem;
+    border-top-left-radius: 1.2rem;
+    outline: none; }
+    .input_box .name_input::placeholder {
+      color: white;
+      opacity: .5;
+      font-size: 1rem;
+      font-weight: 200;
+      letter-spacing: 1px; }
+  .input_box .submit_btn {
+    width: 20%;
+    max-width: 6rem;
+    min-height: 1.5rem;
+    margin: .4rem auto 1rem 0;
+    padding: .5% 0;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+    background: rgba(36, 60, 36, 0.6);
+    border: 1px solid #013f61;
+    border-top-right-radius: .2rem;
+    border-bottom-right-radius: .2rem;
+    outline: none; }
+
+.quest_box {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto; }
+  .quest_box .quest_input {
+    width: 80%;
+    min-height: 1.5rem;
+    margin: .4rem 0 1rem auto;
+    padding: 0.5%;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #013f61;
+    border-right: none;
+    border-bottom-left-radius: 1.2rem;
+    border-top-left-radius: 1.2rem;
+    outline: none; }
+    .quest_box .quest_input::placeholder {
+      color: white;
+      opacity: .5;
+      font-size: 1rem;
+      font-weight: 200;
+      letter-spacing: 1px; }
+  .quest_box .submit_btn {
+    width: 20%;
+    max-width: 6rem;
+    min-height: 1.5rem;
+    margin: .4rem auto 1rem 0;
+    padding: .5% 0;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+    background: rgba(36, 60, 36, 0.6);
+    border: 1px solid #013f61;
+    border-top-right-radius: .2rem;
+    border-bottom-right-radius: .2rem;
+    outline: none; }
+
+/*# sourceMappingURL=8ballStylesheet.css.map */

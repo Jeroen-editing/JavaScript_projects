@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.devForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 360px;
+    height: 200px;
+    margin: auto;
+    background: #4b4b4b;
+}
+
+.devFieldset {
+    display: flex;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-justify-content: center;
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    padding: 20px 0;
+    background: #283d68;
+    border: 4px solid #00726a;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px black;
+}
+
+.devLegend {
+    padding: 3px 6px 1px 6px;
+    margin-left: 16px;
+    font-family: "A Little Mixed Up", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px #f5f26d;
+    background-color: #4e81d3;
+    border: 2px solid #00726a;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px black
+}
+
+.devButton {
+    width: 66%;
+    height: 2.4rem;
+    margin: auto;
+    color: #3f3f3f;
+    font-family: "A Little Mixed Up", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px #f5f26d;
+    background-color: #7b899b;
+    border: 2px double black;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px #2e2e2e;
+}
+
+.devButton:hover {
+    color: navajowhite;
+    background-color: #335555;
+    //font-family: Anarchistic, sans-serif;
+    text-shadow: 1px 1px 2px black;
+    transform: scale(1.36);
+    transition: 0.6s ease-in-out;
+}

@@ -1,0 +1,105 @@
+$border: rgb(19, 9, 0);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 20px 0;
+  width: 100%;
+  max-height: 100vh;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  background-image: url(img/city.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'helvetica neue',sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.clock {
+  width: 31rem;
+  height: 31rem;
+  margin: 50px auto;
+  position: relative;
+  border: 22px solid $border;
+  border-radius: 50%;
+  background-color: rgba(255,121,0, 0.4);
+  box-shadow:
+          12px 12px 28px rgba(255,121,0,0.6),
+          inset 12px 14px 20px rgba(0,0,0,0.8),
+          inset -12px -12px 20px #a8a8a8,
+          -12px -12px 28px rgba(255,121,0,0.6);
+}
+
+.clock-face {
+  position: relative;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(86, 127, 129, 0.4);
+  transform: translateY(-3px); /* account for the height of the clock hands */
+}
+
+.hour {
+  position: relative;
+  top: 79px;
+  left: 78px;
+  width: 68%;
+  height: 68%;
+}
+
+.minute {
+  position: relative;
+  left: 4px;
+  bottom: 334px;
+  width: 98%;
+  height: 98%;
+}
+
+.second  {
+  position: relative;
+  left: 1.79rem;
+  bottom: 792px;
+  width: 88%;
+  height: 88%;
+}
+
+.hand {;
+  width: 50%;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  background: black;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
+  box-shadow: 0 0 4px 2px rgba(255,121,0,0.6);
+}
+
+.second-hand {
+  height: 6px;
+  background: darkred;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+
+}
+
+.middle {
+  width: 5%;
+  height: 5%;
+  position: absolute;
+  left: 233px;
+  bottom: 230px;
+  border: 1px solid rgba(255,121,0,0.6);
+  border-radius: 50%;
+  background-color: #ff9601;
+  box-shadow: 0 0 4px 4px rgba(255,121,0,0.6);
+}

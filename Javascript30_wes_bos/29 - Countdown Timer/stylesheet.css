@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  background: linear-gradient(90deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 900px;
+  width: 1440px;
+  margin: 0 auto;
+  background: no-repeat black url("img/pocket-watch-1600x900.jpg");
+  background-position-x: 60px;
+  background-size: cover;
+}
+
+.page {
+  display: flex;
+}
+
+.timer {
+  display: flex;
+  min-height: 900px;
+  width: 300px;
+}
+
+.timer__controls {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 290px;
+  min-height: 900px;
+  background: #1c4747;
+  border-right: 3px solid rgb(110, 110, 110);
+}
+
+.timerButtons {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 292px;
+  padding: 12px 0;
+  background: #136692;
+  border: 3px solid rgb(110, 110, 110);
+  border-left: none;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  box-shadow: 0 1px 1px black, 0 -1px 1px black;
+}
+
+.timer__button, .submit {
+  cursor: pointer;
+  min-height: 48px;
+  width: 222px;
+  margin: 6px auto;
+  padding: 4px 0 4px 0;
+  color: #ffffff;
+  font-family: 'Muli', monospace;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background: #5f1601;
+  border: 3px solid rgb(90, 90, 90);
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 1px black;
+}
+
+.timer__button:hover,
+.timer__button:focus,
+.submit:hover,
+.submit:focus {
+  color: #2b2b2b;
+  background: rgba(129, 179, 90, 0.81);
+  outline: 0;
+}
+
+.inputBox {
+  display: flex;
+  width: 292px;
+  background: #136692;
+  border: 3px solid rgb(110, 110, 110);
+  border-left: none;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  box-shadow: 0 1px 1px black, 0 -1px 1px black;
+}
+
+.inputBox .timeForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.timeForm {
+  padding: 12px 0;
+}
+
+.timersTitle, .inputTitle {
+  width: 294px;
+  height: 44px;
+  margin: 0 0 6px 0;
+  padding: 4px 0 4px 35px;
+  color: white;
+  font-family: 'Varela Round', monospace;
+  font-size: 22px;
+  text-align: left;
+  letter-spacing: 1px;
+  background: #276363;
+  border: 3px solid rgb(94, 94, 94);
+  border-left: none;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  box-shadow: 0 1px 1px black, 0 -1px 1px black;
+}
+
+.timerInput {
+  display: flex;
+  justify-content: space-evenly;
+  height: 70px;
+  width: 281px;
+  padding: 2px 2px 2px 31px;
+  margin: 0 auto;
+}
+
+.hrs-label, .mins-label {
+  display: block;
+  vertical-align: top;
+  margin: 0 auto;
+  font-family: 'Varela Round', monospace;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.hrs-label p {
+  display: inline;
+  margin-left: 4px;
+  color: white;
+  font-size: 28px;
+  text-shadow: 2px 2px 1px black;
+}
+
+.hrs-input, .mins-input {
+  height: 40px;
+  width: 96px;
+  padding: 0 0 0 10px;
+  color: #0607bc;
+  font-family: 'Varela Round', monospace;
+  font-size: 18px;
+  border-radius: 8px;
+  box-shadow: inset 2px 2px 2px 1px black;
+}
+
+.timerOutput {
+  display: flex;
+  width: 292px;
+  background: #136692;
+  border: 3px solid rgb(110, 110, 110);
+  border-left: none;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  box-shadow: 0 1px 1px black, 0 -1px 1px black;
+}
+
+.second__time-left {
+  min-width: 222px;
+  margin: 10px auto;
+  padding: 2px 0 6px 9px;
+  color: #e5e5e5;
+  font-family: 'Dosis', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 6px;
+  text-shadow: 2px 2px 4px rgba(255, 0, 255, 0.36);
+  background: #1a4b35;
+  border: 3px solid rgb(0, 57, 0);
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 1px black;
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 1140px;
+  padding: 16px 0;
+}
+
+.display {
+  display: flex;
+  justify-content: space-evenly;
+  width: 969px;
+  height: 262px;
+  margin: auto;
+  padding: 8px 22px;
+  background: rgba(0, 0, 0, 0.44);
+  border: 2px solid rgba(204, 204, 204, 0.06);
+  border-radius: 22px;
+}
+
+.display__time-left {
+  height: 156px;
+  width: 868px;
+  margin: auto;
+  padding: 3px 12px 14px 12px;
+  color: rgb(61, 7, 0);
+  font-family: 'Geostar', sans-serif;
+  font-size: 7.7rem;
+  font-weight: 900;
+  text-align: center;
+  text-shadow:  6px 6px 6px rgba(255, 255, 0, 0.64), -6px -6px 6px rgba(255, 255, 0, 0.64),
+                6px -6px 6px rgba(255, 255, 0, 0.64), -6px 6px 6px rgba(255, 255, 0, 0.64);
+  background: rgba(0, 0, 0, 0.88);
+  border: 2px solid rgba(24, 24, 24, 0.84);
+  border-radius: 12px;
+  box-shadow: 0 0 6px 2px rgba(255, 255, 0, 0.64);
+}
+
+.openSpace {
+  height: 262px;
+  width: 1001px;
+  border-radius: 44px;
+}
+
+.endTimeBox {
+  display: flex;
+  justify-content: center;
+  height: 161px;
+  width: 868px;
+  margin: auto;
+  padding: 4px 6px 14px 6px;
+  color: rgb(61, 7, 0);
+  font-weight: 900;
+  text-align: center;
+  text-shadow:  6px 6px 6px rgba(255, 255, 0, 0.64), -6px -6px 6px rgba(255, 255, 0, 0.64),
+  6px -6px 6px rgba(255, 255, 0, 0.64), -6px 6px 6px rgba(255, 255, 0, 0.64);
+  background: rgba(0, 0, 0, 0.88);
+  border: 2px solid rgba(24, 24, 24, 0.84);
+  border-radius: 12px;
+  box-shadow: 0 0 6px 2px rgba(255, 255, 0, 0.64);
+}
+
+.endTimeText {
+  height: 160px;
+  min-width: 600px;
+  margin: 12px 12px 0 12px;
+  font-size: 2.8rem;
+  font-family: 'Revalia', sans-serif;
+  letter-spacing: -1px;
+  word-spacing: -4px;
+  text-transform: capitalize;
+}
+
+.display__end-time {
+  margin-left: -12px;
+  font-size: 4.8rem;
+}

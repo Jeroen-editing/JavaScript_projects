@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatir</title>
+
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Dosis:200,300,400,500,600,700,800|
+    |Exo+2:100,200,300,400,500,600,700,800,900|K2D:100,200,300,400,500,600,700,800|
+    |Oxanium:200,300,400,500,600,700,800|Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="titleSection">
+        <div class="titleBox">
+            <h1 class="title">Calculator</h1>
+            <div class="lineUnderTitle"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="mainSection">
+            <div class="machine">
+                <div class="topMachine">
+                    <div class="screen">
+                        <div class="inputBox">
+                            <p class="input" id="input"></p>
+                        </div>
+                        <div class="outputBox">
+                            <p class="output" id="output"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="keyboard">
+                    <div class="buttonRows">
+                        <div class="square reset">
+                            <p class="special aAndc">AC</p>
+                        </div>
+                        <div class="square figure" data-button="7">
+                            <p class="seven">7</p>
+                        </div>
+                        <div class="square figure" data-button="8">
+                            <p class="eight">8</p>
+                        </div>
+                        <div class="square figure" data-button="9">
+                            <p class="nine">9</p>
+                        </div>
+                        <div class="square division operator" data-operator="÷">
+                            <p class="special part">÷</p>
+                        </div>
+                        <div class="square procentage operator" data-operator="%">
+                            <p class="special roundOne">º</p><p class="special slashTwo">/</p><p class="special roundTwo">º</p>
+                        </div>
+                    </div>
+                    <div class="buttonRows">
+                        <div class="square modulus operator" data-operator="mod">
+                            <p class="special mod">mod</p>
+                        </div>
+                        <div class="square figure" data-button="4">
+                            <p class="four">4</p>
+                        </div>
+                        <div class="square figure" data-button="5">
+                            <p class="five">5</p>
+                        </div>
+                        <div class="square figure" data-button="6">
+                            <p class="six">6</p>
+                        </div>
+                        <div class="square multiplication operator" data-operator="x">
+                            <p class="special multiply">×</p>
+                        </div>
+                        <div class="square brackets">
+                        </div>
+                    </div>
+                    <div class="buttonRows">
+                        <div class="square power operator" data-operator="pow">
+                            <span class="special powerX">x</span><span class="special powerY">y</span>
+                        </div>
+                        <div class="square figure" data-button="1">
+                            <p class="one">1</p>
+                        </div>
+                        <div class="square figure" data-button="2">
+                            <p class="two">2</p>
+                        </div>
+                        <div class="square figure" data-button="3">
+                            <p class="three">3</p>
+                        </div>
+                        <div class="square substraction operator" data-operator="-">
+                            <p class="special minus">−</p>
+                        </div>
+                        <div class="square brackets">
+                        </div>
+                    </div>
+                    <div class="buttonRows">
+                        <div class="square root operator" data-operator="root">
+                            <p class="special rootY">y</p><img class="special rootSymbol" src="icons/square-root-3.png" alt=""><p class="special rootX">x</p>
+                        </div>
+                        <div class="square figure" data-button=".">
+                            <p>,</p>
+                        </div> 
+                        <div class="square figure" data-button="0">
+                            <p class="zero">0</p>
+                        </div>
+                        <div class="square calculate">
+                            <p class="special equal">=</p>
+                        </div>
+                        <div class="square addition operator" data-operator="+">
+                            <p class="special plus">+</p>
+                        </div>
+                        <div class="square plusMinus figure" data-button="-">
+                            <p class="special plus">+</p><p class="special slashOne">/</p><p class="special min">-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="copyrightsSection">
+        <div class="copyAndRights">
+            <div class="copy_rights">
+                <span class="copy">&copy;</span>
+                <div class="day" id="day"></div>
+                <span class="dot">●</span>
+                <div class="date" id="date"></div>
+                <span class="dot">●</span>
+                <div class="loginHour" id="hour"></div>
+                <span class="dot">●</span>
+                <a href="https://www.linkedin.com/in/jeroen-de-vos-39258718b/" class="name">Jeroen De Vos
+                    <span class="tooltiptext">Visit my LinkedIn profile
+                        <span class="arrow"></span>
+                    </span>
+                </a>
+                <span class="copy">&copy;</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="calc.js"></script>
+    <script src="copy_rights.js"></script>
+</body>
+</html>

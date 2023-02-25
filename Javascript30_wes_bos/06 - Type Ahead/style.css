@@ -1,0 +1,142 @@
+html {
+  box-sizing: border-box;
+  background-image:  url("./img/newyork-half.jpg");
+  background-size: cover;
+  font-family: 'helvetica neue', sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+input {
+  width: 100%;
+  padding: 20px;
+}
+
+.search-form {
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+input.search {
+  position: relative;
+  width: 115%;
+  top: 10px;
+  left: -8%;
+  margin: 0;
+  color: #173447;
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 1px 1px 2px white;
+  text-decoration: underline;
+  text-underline-offset: 12px;
+  outline: 0;
+  border: 4px solid rgb(20, 106, 87);
+  background: rgba(255,255,255,0.46);
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8), inset 0 0 2px rgba(0, 0, 0, 0.4);
+  transform: perspective(100px) rotateX(1deg) translateY(2px) scale(1.002);
+  z-index: 2;
+}
+
+.suggestions {
+  margin: 6px 0 0 0;
+  padding: 0;
+  position: relative;
+}
+
+.suggestions li {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin: 0;
+  padding: 20px 8px;
+  list-style: none;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 2px white;
+  transition: background 0.2s;
+  background-color: rgba(121,144,123,0.6);
+  border-left: 4px solid rgb(20, 106, 87);
+  border-right: 4px solid rgb(20, 106, 87);
+  border-top: 2px solid rgb(20, 106, 87);
+  border-bottom: 2px solid rgb(20, 106, 87);
+  border-radius: 2px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+.suggestions li .highlight {
+  margin: 0 -4px;
+  padding: 4px 4px;
+  border: 1px solid rgba(184, 134, 11, 0.2);
+
+}
+
+.suggestions li:nth-child(even) {
+  transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+  background: linear-gradient(to bottom,  rgba(225, 197, 61, 0.9) 0%, rgba(255,255,255,0.9) 100%);
+}
+
+.suggestions li:nth-child(odd) {
+  transform: perspective(100px) rotateX(-3deg) translateY(3px);
+  background: linear-gradient(to top, rgba(255,255,255,0.9) 0%, rgba(133, 109, 39, 0.9) 100%);
+}
+
+p.top {
+  margin: -8px 0 -10px 0;
+}
+
+p.bottom {
+  max-width: 300px;
+  margin-left: 172px;
+  margin-bottom: -14px;
+  background: rgba(100,100,100,0.2);
+  border: 1px solid rgba(184, 134, 11, 0.14);
+  //border-radius: 44px;
+  box-shadow: 1px 1px 2px black;
+}
+
+span.name {
+  padding: 6px 6px;
+  font-weight: 600;
+
+  background: rgba(100,100,100,0.2);
+  border: 1px solid rgba(184, 134, 11, 0.4);
+  //border-radius: 44px;
+  box-shadow: 1px 1px 2px black;
+}
+
+span.population {
+  float: right;
+  margin-top: 8px;
+  padding: 3px 3px;
+  color: #193549;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-underline: #193549;
+  text-transform: lowercase;
+}
+
+span.latitude, span.longitude, span.between {
+  float: right;
+  padding: 3px 3px;
+  color: #4b4b4b;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+.between {
+ margin: 0 12px;
+}
+
+.highlight {
+  background: rgba(255, 198, 0, 0.4);
+  border-radius: 44px;
+}

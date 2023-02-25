@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0 auto;
+  width: 1440px;
+  font-family: Arial, sans-serif; }
+
+.topPage {
+  display: flex;
+  box-sizing: border-box; }
+  .topPage #nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    height: 50px;
+    padding-bottom: 8px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #cbcbcb; }
+    .topPage #nav .navLeft {
+      display: flex;
+      justify-content: space-between;
+      width: 240px;
+      margin: 12px 0 0 30px;
+      float: left;
+      left: 0; }
+      .topPage #nav .navLeft .suggestionsActivationBox {
+        display: flex;
+        max-height: 20px;
+        padding: 0 0 8px 0;
+        margin-top: -2px; }
+        .topPage #nav .navLeft .suggestionsActivationBox .custom-select {
+          position: relative;
+          width: 77px;
+          max-height: 20px;
+          font-family: 'Raleway', sans-serif;
+          font-weight: 600;
+          text-align: center;
+          border: none;
+          border-top: 2px solid;
+          border-image: linear-gradient(90deg, #00379e 0%, #0028ad 20%, #003acf 40%, #0034e4 60%, #0052ee 80%, #0058ff 100%); }
+          .topPage #nav .navLeft .suggestionsActivationBox .custom-select select {
+            display: none; }
+        .topPage #nav .navLeft .suggestionsActivationBox .select-selected {
+          background: linear-gradient(90deg, #00379e 0%, #0028ad 20%, #003acf 40%, #0034e4 60%, #0052ee 80%, #0058ff 100%);
+          color: #ffffff;
+          padding: 8px 16px; }
+          .topPage #nav .navLeft .suggestionsActivationBox .select-selected:hover {
+            color: black;
+            font-weight: 600;
+            text-shadow: 0 0 4px white;
+            background-color: rgba(67, 160, 169, 0.66); }
+          .topPage #nav .navLeft .suggestionsActivationBox .select-selected:after {
+            position: absolute;
+            content: " ";
+            top: 14px;
+            right: 10px;
+            width: 0;
+            height: 0;
+            border-width: 6px;
+            border-style: solid;
+            border-color: #b9fdff transparent transparent transparent; }
+          .topPage #nav .navLeft .suggestionsActivationBox .select-selected.select-arrow-active:after {
+            top: 7px;
+            border-color: transparent transparent #b9fdff transparent; }
+        .topPage #nav .navLeft .suggestionsActivationBox .select-items div {
+          color: #ffffff;
+          padding: 6px 16px;
+          border-top: 1px solid #00dbff; }
+        .topPage #nav .navLeft .suggestionsActivationBox .select-items {
+          position: absolute;
+          background: linear-gradient(90deg, #00379e 0%, #0028ad 20%, #003acf 40%, #0034e4 60%, #0052ee 80%, #0058ff 100%);
+          top: 180%;
+          left: 0;
+          right: 0;
+          z-index: 99; }
+        .topPage #nav .navLeft .suggestionsActivationBox .select-hide {
+          display: none; }
+        .topPage #nav .navLeft .suggestionsActivationBox .select-items div:hover {
+          color: black;
+          font-weight: 600;
+          text-shadow: 0 0 4px white;
+          background-color: rgba(67, 160, 169, 0.66); }
+        .topPage #nav .navLeft .suggestionsActivationBox .same-as-selected {
+          background-color: rgba(0, 0, 0, 0.1); }
+      .topPage #nav .navLeft .selectorLabel {
+        color: #393939;
+        margin: 16px 0 0 8px;
+        font-size: 12px; }
+      .topPage #nav .navLeft p {
+        margin: 2px 0 0 6px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 28px;
+        font-weight: 100; }
+      .topPage #nav .navLeft a {
+        margin: 3px 6px 0 0;
+        display: flex;
+        justify-content: space-between;
+        width: 30px; }
+    .topPage #nav .navRight {
+      right: 0;
+      margin: 12px 30px 0 0;
+      display: flex;
+      float: right; }
+      .topPage #nav .navRight .navRightOne, .topPage #nav .navRight .navRightTwo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+      .topPage #nav .navRight .navRightOne {
+        width: 91px;
+        margin-right: 24px; }
+      .topPage #nav .navRight .navRightTwo {
+        width: 106px; }
+    .topPage #nav .navLink {
+      display: flex;
+      height: 32px;
+      text-align: center;
+      color: black;
+      text-decoration: none; }
+      .topPage #nav .navLink p {
+        padding-top: 9px;
+        font-size: 13px; }
+      .topPage #nav .navLink:hover {
+        text-decoration: underline; }
+      .topPage #nav .navLink #homeIcon, .topPage #nav .navLink #menuIcon {
+        height: 18px;
+        width: 18px;
+        margin: auto;
+        opacity: 0.5; }
+        .topPage #nav .navLink #homeIcon:hover, .topPage #nav .navLink #menuIcon:hover {
+          opacity: 1; }
+    .topPage #nav .signIn {
+      width: 77px;
+      height: 36px;
+      padding: 0 12px;
+      color: white;
+      font-size: 13px;
+      font-weight: 800;
+      background: linear-gradient(90deg, #0058ff 0%, #0052ee 20%, #0034e4 40%, #003acf 60%, #0028ad 80%, #00379e 100%);
+      border: none; }
+
+.mainPart {
+  display: flex;
+  flex-direction: column; }
+  .mainPart .topSpace {
+    height: 220px; }
+  .mainPart .title {
+    display: flex;
+    justify-content: center;
+    margin-top: 4px; }
+  .mainPart .spaceUnderTitle {
+    height: 24px; }
+  .mainPart .search {
+    display: flex;
+    box-sizing: content-box;
+    justify-content: center;
+    height: 50px; }
+    .mainPart .search .searchBar {
+      display: flex;
+      width: 584px;
+      border: 1px solid rgba(114, 63, 0, 0.08);
+      border-radius: 32px;
+      background: rgba(232, 231, 209, 0.26);
+      box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.28); }
+      .mainPart .search .searchBar .searchButton {
+        height: 50px;
+        width: 51px;
+        margin-left: -1px;
+        padding: 8px;
+        border: 1px solid rgba(47, 26, 0, 0.02);
+        border-radius: 50%;
+        background-color: rgba(96, 139, 117, 0.06); }
+        .mainPart .search .searchBar .searchButton #spyglass {
+          height: 16px;
+          width: 16px; }
+        .mainPart .search .searchBar .searchButton:hover {
+          background-color: rgba(0, 100, 0, 0.06); }
+      .mainPart .search .searchBar .searchWindow {
+        height: 100%;
+        padding: 0 6px;
+        font-size: 16px;
+        font-weight: 300;
+        background-color: rgba(255, 255, 255, 0);
+        border: none; }
+
+.searchNav {
+  display: block;
+  padding-top: 22px; }
+  .searchNav .searchFormBox {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; }
+    .searchNav .searchFormBox .searchForm {
+      margin: 0 0 14px -10px; }
+      .searchNav .searchFormBox .searchForm input {
+        padding: 8px 14px;
+        color: rgba(0, 0, 0, 0.65);
+        font-size: 15px;
+        font-weight: normal;
+        letter-spacing: -0.016rem;
+        text-transform: capitalize;
+        background: rgba(128, 128, 128, 0.08);
+        border: 1px solid rgba(47, 26, 0, 0.02);
+        border-radius: 4px;
+        cursor: text; }
+        .searchNav .searchFormBox .searchForm input:hover {
+          color: black;
+          border: 1px solid rgba(47, 26, 0, 0.16); }
+      .searchNav .searchFormBox .searchForm #googleSearch {
+        margin-right: 4px; }
+      .searchNav .searchFormBox .searchForm #wordSearch {
+        margin-left: 4px; }
+  .searchNav .languageBox {
+    width: 600px;
+    margin: 6px auto;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 400;
+    text-shadow: 0 0 2px white;
+    border-radius: 8px; }
+    .searchNav .languageBox .language {
+      padding: 0 4px 2px 4px;
+      color: darkslateblue;
+      font-weight: 400;
+      text-decoration: none;
+      border: 1px solid rgba(47, 26, 0, 0); }
+      .searchNav .languageBox .language:hover {
+        color: #1d3b1d;
+        text-shadow: none;
+        border: 1px solid rgba(47, 26, 0, 0.3);
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.3); }
+
+.spaceAboveSuggestions {
+  box-sizing: border-box;
+  height: 77px;
+  margin: 0 0 4px 0;
+  padding: 4px 0 8px 0; }
+  .spaceAboveSuggestions .spaceAboveSuggestionsBox {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 62px; }
+    .spaceAboveSuggestions .spaceAboveSuggestionsBox .arrowDownBox {
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      box-sizing: border-box;
+      height: 28px; }
+      .spaceAboveSuggestions .spaceAboveSuggestionsBox .arrowDownBox .arrowDown {
+        height: 16px;
+        width: 16px;
+        margin-top: -3px; }
+    .spaceAboveSuggestions .spaceAboveSuggestionsBox .arrowDownBox-active {
+      visibility: visible; }
+
+.suggestions {
+  margin: 10px 0 41px 0;
+  display: block; }
+  .suggestions .suggestions-hidden {
+    height: 158px; }
+  .suggestions .suggestionBox {
+    width: 1230px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around; }
+    .suggestions .suggestionBox .suggestionsList {
+      display: none;
+      justify-content: space-between;
+      width: 600px;
+      margin-bottom: 20px; }
+      .suggestions .suggestionBox .suggestionsList .tipLink {
+        width: 172px;
+        min-height: 138px;
+        display: block;
+        box-sizing: border-box;
+        text-decoration: none;
+        margin: 0 8px;
+        border-radius: 4px;
+        border: 2px solid rgba(47, 26, 0, 0.4);
+        background: rgba(232, 231, 209, 0.6); }
+        .suggestions .suggestionBox .suggestionsList .tipLink:hover {
+          background: rgba(66, 100, 10, 0.66);
+          border: 2px solid rgba(47, 26, 0, 0.6);
+          transform: scale(1.12);
+          transition: 0.12s ease-in-out; }
+          .suggestions .suggestionBox .suggestionsList .tipLink:hover .photoTip {
+            border: 1px solid rgba(47, 26, 0, 0.6); }
+          .suggestions .suggestionBox .suggestionsList .tipLink:hover .link p {
+            color: #4cb6c0;
+            font-weight: 600;
+            text-shadow: 1px 1px 1px black; }
+        .suggestions .suggestionBox .suggestionsList .tipLink .photoTip {
+          height: 100px;
+          box-sizing: border-box;
+          overflow: hidden;
+          margin: 8px 8px 8px 8px;
+          border: 1px solid rgba(47, 26, 0, 0.2); }
+        .suggestions .suggestionBox .suggestionsList .tipLink .link {
+          display: flex;
+          justify-content: center;
+          margin: -6px 6px;
+          font-family: 'KoHo', sans-serif; }
+          .suggestions .suggestionBox .suggestionsList .tipLink .link p {
+            color: rgba(24, 38, 35, 0.88);
+            font-size: 14px;
+            font-weight: 500; }
+          .suggestions .suggestionBox .suggestionsList .tipLink .link .linkText {
+            margin: 0 4px;
+            text-decoration: underline;
+            text-underline-offset: 3px; }
+    .suggestions .suggestionBox .suggestionsList-active {
+      display: flex; }
+  .suggestions .spaceMiddleSuggestions {
+    height: 60px;
+    margin-top: 30px; }
+    .suggestions .spaceMiddleSuggestions .lineBetween {
+      height: 1px;
+      width: 1208px;
+      margin: auto;
+      background: #b0b0b0; }
+
+.spaceAboveFooter {
+  display: block; }
+
+.extraSpace {
+  min-height: 80px; }
+
+.footerOne {
+  position: fixed;
+  bottom: 40px;
+  height: 39px;
+  width: 1440px;
+  color: #7e7e7e;
+  font-size: 15px;
+  background: #f1f1f1;
+  border-top: 1px solid rgba(187, 187, 187, 0.4);
+  border-bottom: 1px solid rgba(187, 187, 187, 0.4); }
+  .footerOne p {
+    padding: 10px 0 0 30px; }
+
+.footerTwo {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  height: 41px;
+  width: 1440px;
+  font-size: 13px;
+  background: #f1f1f1; }
+  .footerTwo .leftFooter {
+    float: left;
+    padding: 13px 0 0 30px; }
+    .footerTwo .leftFooter a {
+      padding-right: 24px;
+      color: #5e5e5e;
+      text-decoration: none; }
+  .footerTwo .rightFooter {
+    float: right;
+    padding: 13px 30px 0 0; }
+    .footerTwo .rightFooter a {
+      padding-left: 24px;
+      color: #5e5e5e;
+      text-decoration: none; }
+
+/*# sourceMappingURL=stylesheet.css.map */

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="utf-8"><title>RegEx Form</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,700|Kulim+Park:200,300,400,600,700|Spinnaker&display=swap"
+              rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>New User Signup</h1>
+        <form>
+
+            <label>Username
+                <input type="text" name="username" placeholder="username">
+            <p class="explained">Username must be  and contain 5 - 12 characters</p>
+            </label>
+            <label>Email
+                <input type="text" name="email" placeholder="email">
+            <p class="explained">Email must be a valid address, e.g. me@mydomain.com</p>
+            </label>
+            <label>Password
+                <input type="password" name="password" placeholder="password">
+            <p class="explained">Password must alphanumeric (@, _ and - are also allowed) and be 8 - 20 characters</p>
+            </label>
+            <label>Telephone
+                <input type="text" name="telephone" placeholder="telephone">
+            <p class="explained">Telephone must be a valid BE smartphone number (04 + 8 digits)</p>
+            </label>
+            <label>Slug
+                <input type="text" name="slug" placeholder="profile slug">
+            <p class="explained">Slug must contain only lowercase letters, numbers and hyphens and be 8 - 20 characters</p>
+            </label>
+        </form>
+        <script type="text/javascript" src="validation.js"></script>
+    </body>
+</html>

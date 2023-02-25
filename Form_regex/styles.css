@@ -1,0 +1,58 @@
+body {
+    color: #333;
+}
+h1 {
+    margin: 20px auto;
+    font-family: "Spinnaker", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+form {
+    width: 500px;
+    margin: 20px auto;
+}
+label {
+    margin: 20px 0 0 2px;
+    font-family: "Spinnaker", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+input {
+    display: block;
+    padding: 8px 16px;
+    margin: 2px 0 0 2px;
+    font-size: 26px;
+    font-family: 'Kulim Park', sans-serif;
+    /*font-weight: 600;*/
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 3px solid darkslategray;
+    background-color: rgba(211, 211, 211, 0.7);
+    outline: none !important;
+}
+
+.invalid {
+    border: 3px solid #a90300;
+    background-color: rgba(255, 69, 0, 0.4);
+}
+
+.valid {
+     border: 3px solid darkolivegreen;
+     background-color: rgba(128, 128, 0, 0.5);
+}
+
+input + p {
+    margin: 4px 0 10px 2px;
+    text-align: center;
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 18px;
+    color: rgba(169, 3, 0, 0.8);
+    letter-spacing: -1px;
+    opacity: 0;
+}
+input.invalid + p {
+    opacity: 1;
+    height: auto;
+}

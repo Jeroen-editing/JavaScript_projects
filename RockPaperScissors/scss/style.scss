@@ -1,0 +1,498 @@
+$bgGreen: rgba(0, 70, 73, 0.88);
+$bgLight: rgba(0, 117, 121, 0.88);
+$bgBlue: rgba(0, 34, 56, 0.4);
+$titleBg: rgba(7, 51, 39, 0.6);
+
+$mainBorder: rgb(37, 86, 116);
+$lightBorder: rgba(9, 165, 152, 0.6);
+$orangeBorder: rgba(211, 164, 34, 0.8);
+$darkBorder: rgba(7, 51, 39, 0.6);
+$greenBorder: rgba(94, 124, 50, 0.46);
+
+$textColor: rgb(236, 209, 57);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    background: black;
+}
+  
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 1100px;
+    height: 700px;
+    margin: auto;
+}
+  
+.asideLeft,
+.asideRight {
+    display: block;
+    min-width: 190px;
+    height: 700px;
+}
+.photoBoardLeft,
+.photoBoardRight {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 190px;
+    height: 700px;
+    padding: 16px 0;
+    background: no-repeat url("../assets/backgrounds/green-blue-dark.jpg");
+    background-size: cover;
+    border: 4px solid $mainBorder;
+}
+.photoBoardLeft {
+    border-right: none;
+}
+.photoBoardRight {
+    border-left: none;
+}
+.topLeftBox,
+.topRightBox {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 155px;
+    height: 101px;
+    margin: 4px auto;
+    background: $bgBlue;
+    border: 2px solid $greenBorder;
+    border-radius: 10px;
+
+    .leftPlay,
+    .rightPlay {
+        display: flex;
+        justify-content: center;
+        width: 155px;
+        height: 101px;
+        color: $textColor;
+        font-family: 'K2D', cursive;
+        font-size: 66px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 2px black;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+.midLeftBox,
+.midRightBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
+    height: 494px;
+    margin: 24px auto;
+
+    .imgBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+        width: 160px;
+        height: 484px;
+        padding: 8px 0 12px 0;
+        background: $bgGreen;
+        border: 2px solid $greenBorder;
+        border-radius: 10px;
+    }
+    .selectorsTitle {
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 144px;
+        height: 46px;
+        margin: 6px 0;
+        padding: 5px 0 5px 0;
+        color: palegoldenrod;
+        font-family: 'K2D', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 2px black;
+        background: $bgBlue;
+        border: 2px solid $greenBorder;
+        border-radius: 6px;   
+    }
+    .selector {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        width: 136px;
+        height: 100px;
+        margin: 8px auto;
+        border: 2px solid $orangeBorder;
+        border-radius: 2px;
+        box-shadow: 0 0 4px 2px black;
+    
+        img {
+            height: 100%;
+        }
+    
+        &:hover {
+            border: 2px solid $orangeBorder;
+            transition: 0.2s ease-in;
+            transform: scale(1.08);
+            background: $orangeBorder;
+        }
+    }
+    .selected {
+        border: 3px solid #7f2e02;
+        box-shadow: 0 0 4px 2px #E8D20C;
+        transition: 0.2s ease-in-out;
+        transform: scaleX(1.06) scaleY(1.1);
+    }
+}
+.bottomLeftBox,
+.bottomRightBox {
+    height: 70px;
+    width: 160px;
+    margin: 24px auto;
+    background: $bgBlue;
+    border: 2px solid $greenBorder;
+    border-radius: 10px;
+
+    .developer {
+        margin-top: -10px;
+        padding: 8px;
+        color: #570000;
+        font-family: 'K2D', cursive;
+        font-size: 50px;
+        font-weight: 600;
+        text-align: center;
+        text-shadow: 0 0 1px rgba(255, 255, 255, 0.6), 0 0 2px rgba(255, 255, 255, .4), 0 0 3px rgba(255, 255, 255, 0.2);
+    }
+    .games {
+        margin-left: 4px;
+        color: #062c21;
+        font-family: 'K2D', cursive;
+        font-size: 22px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        text-shadow: 0 0 1px rgba(255, 255, 255, 0.6), 0 0 2px rgba(255, 255, 255, .4), 0 0 3px rgba(255, 255, 255, .2); 
+    }
+}
+
+/* ------------------------------ main --------------------------------- */
+
+.midsection {
+    width: 720px;
+    padding: 10px 0;
+    overflow: hidden;
+    background: url("../assets/backgrounds/green-blue-big.jpg");
+    border: 4px solid rgb(37, 86, 116);
+    box-shadow: 4px 0 4px 0 rgba(32, 32, 32, 0.8), 2px 0 2px 0 black,
+                -2px 0 2px 0 black, -4px 0 4px 0 rgba(32, 32, 32, 0.8);
+    z-index: 1;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 660px;
+    margin: 8px auto 20px auto;
+    padding: 4px 6px 10px 6px;
+    background: $bgGreen;
+    border: 2px solid $darkBorder;
+    border-radius: 2px;
+    box-shadow: 0 0 4px 2px rgba(44, 44, 44, 0.8),  0 0 2px 1px black;
+
+    .topTitle {
+        display: flex;
+        justify-content: center;
+        color: $textColor;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 52px;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: 3px;
+        text-shadow: 3px 2px 3px black;
+    
+        span {
+            margin: 0 2px;
+        }
+    }
+    .lineUnder {
+        height: 3px;
+        width: 595px;
+        margin: 4px auto;
+        background-color: $textColor;
+        border-radius: 1px;
+        box-shadow: 2px 2px 2px black;
+    }
+}
+.nameBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 626px;
+    margin: 12px auto 10px auto;
+    padding: 0 20px 10px 20px;
+    background: $bgBlue;
+    border: 2px solid $darkBorder;
+    box-shadow: inset 0 0 2px 1px rgb(26, 26, 26);
+
+    .playerName, 
+    .pcName {
+        height: 28px;
+        font-family: 'K2D', sans-serif;
+        font-size: 26px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        text-shadow: 2px 2px 2px black;
+        border-bottom: 1px solid $orangeBorder;
+        //background: black;
+    }
+    .playerName {
+        width: 318px;
+        padding: 4px 10px 12px 0;
+        color: rgb(240, 237, 219);
+    
+        .inputName {
+            padding: 6px 8px 0 0;
+            width: 313px;
+            color: rgba(240, 237, 219, 0.8);
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 28px;
+            font-weight: 200;
+            text-align: left;
+            letter-spacing: 2px;
+            text-transform: none;
+            text-shadow: 2px 2px 2px black;
+            background: none;
+            border: none;
+        }
+    }
+    .pcName {
+        width: 236px;
+        padding: 4px 0 12px 10px;
+    
+        .pc {
+            color: rgb(0, 173, 204);
+            text-align: right;
+        }
+    }
+}
+.scoreBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 636px;
+    margin: 22px auto 28px auto;
+    //background: black;
+
+    .scorePlayerBox,
+    .scorePcBox {
+        display: flex;
+        justify-content: center;
+        width: 86px;
+        height: 76px;
+        padding: 10px 8px;
+        background: $bgGreen;
+        border: 2px solid $greenBorder;
+        border-radius: 8px;
+        box-shadow: inset 0 0 2px 1px black;
+    }
+    .scorePlayer,
+    .scorePC {
+        height: 62px;
+        width: 62px;;
+        padding: 0 12px 20px 12px;
+        color: #94c34f;
+        font-family: 'Fredoka One', cursive;
+        font-size: 60px;
+        font-weight: 800;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    .scoreTextBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 323px;
+        height: 56px;
+        margin: auto;
+        padding: 10px 12px 0 12px;
+        font-family: 'K2D', sans-serif;
+        background: $bgGreen;
+        border: 2px solid $darkBorder;
+        border-radius: 2px;
+        box-shadow: inset 0 0 2px 1px rgb(31, 31, 31);
+    }
+    .arrowLeft,
+    .arrowRight {
+        height: 30px;
+        width: 30px;
+        margin: 8px auto 0 auto;
+        border-radius: 6px;
+        box-shadow: 0 0 2px 1px rgba(27, 27, 27, .6), 0 0 1px rgba(0, 0, 0, .8);
+    }
+    .verticalLine {
+        width: 3px;
+        height: 45px;
+        margin: 0 4px;
+        background-color: $darkBorder;
+        border-radius: 4px;
+        box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.4);
+    }
+    .scoreTitle {
+        width: 151px;
+        margin: -2px 12px 0 14px;
+        padding-left: 2px;
+        color: #94c34f;
+        font-size: 35px;
+        font-weight: 700;
+        letter-spacing: 6px;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 2px black;
+    }
+}
+.scoreInfo,
+.gameInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    width: 644px;
+    margin: 12px auto 8px auto;
+    background: $bgBlue;
+    border: 2px solid $darkBorder;
+    border-radius: 2px;
+    box-shadow: inset 0 0 2px 1px rgb(26, 26, 26);
+}
+
+.scoreInfo .scoreMessages,
+.gameInfo .gameMessages {
+    padding: 0 10px;
+    color: palegoldenrod;
+    font-family: 'K2D', cursive;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+
+    span {
+        color: #96700a;
+        font-size: 23px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    
+}
+.controlBox {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 24px auto 24px auto;
+    height: 72px;
+
+    .gameButtons {
+        height: 48px;
+        width: 303px;
+        padding-bottom: 6px;
+        color: palegoldenrod;
+        font-family: 'K2D', sans-serif;
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 4px;
+        text-shadow: 2px 2px 2px black;
+        background: $bgGreen;
+        border: 2px solid $greenBorder;
+        box-shadow: 0 0 3px 2px rgba(43, 43, 43, 0.8), 0 0 2px 1px black;
+
+        &:hover {
+            color: rgba(52, 0, 0, 0.85);
+            text-shadow: 0 0 4px whitesmoke;
+            background-color: rgba(84, 158, 95, 0.75);
+        }
+    }
+    #startButton {
+        margin-left: -12px;
+
+        &:hover {
+            transition: 0.2s ease-in-out;
+            transform: scale(1.08);
+        }
+    }
+    #restartButton {
+        margin-right: -12px;
+
+        &:hover {
+            transition: 0.2s ease-in-out;
+            transform: scale(1.08);
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 660px;
+    margin: 2px auto 12px auto;
+    padding: 4px 6px 10px 6px;
+    background: $bgGreen;
+    border: 2px solid $darkBorder;
+    border-radius: 2px;
+    box-shadow: 0 0 4px 2px rgba(44, 44, 44, 0.8),  0 0 2px 1px black;
+
+    .bottomTitle {
+        display: flex;
+        justify-content: center;
+        color: $textColor;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 52px;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: 3px;
+        text-shadow: 3px 2px 3px black;
+    
+        span {
+            margin: 0 2px;
+        }
+    }
+    .lineUnder {
+        height: 3px;
+        width: 595px;
+        margin: 4px auto;
+        background-color: $textColor;
+        border-radius: 1px;
+        box-shadow: 2px 2px 2px black;
+    }
+}
+.timeAndDev {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 6px auto;
+    padding: 2px 0 3px 0;
+    color: palegoldenrod;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: 1px;
+    transform: scaleY(1.3);
+}

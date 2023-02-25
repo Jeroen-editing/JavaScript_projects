@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Fredoka:wght@300;400;500;600;700&family=Genos:wght@100;200;300;400;500;600;700;800;900&family=Glory:wght@100;200;300;400;500;600;700;800&family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Dynamic page</title>
+</head>
+<body>
+    <header class="page_header">
+        <div class="header_container">
+            <section class="title_box">
+                <h1 class="page_title">A dynamic page with Vanilla JavaScript</h1>
+            </section>
+            <section class="photo_box">
+                <!--<img src="assets/banner_01.jpg" class="top_img" alt="">-->
+            </section>
+            <!--<section class="under_title"></section>-->
+        </div>
+    </header>
+
+    <nav class="main_nav" id="stickyNav">
+        <div class="dropBg">
+            <span class="arrow"></span>
+        </div>
+        <ul class="nav_list">
+            <li class="nav_logo">
+                <a class="nav_link" href="#"><p class="top">Top</p> <span class="arrowUp">&#8682;</span></a>
+            </li>
+            <li class="nav_item">
+                <a class="nav_link" href="#">Home</a>
+                <div class="dropdown left_drop">
+                    <div class="home_box dropbox">
+                        <p>Go back to the menu.</p>
+                        <p>See our promotions. </p>
+                    </div>
+                </div>
+            </li>
+            <li class="nav_item">
+                <a class="nav_link" href="#">About</a>
+                <div class="dropdown">
+                    <div class="about_box dropbox">
+                        <p>Reed more about:</p>
+                        <p>what we do and who we are</p>
+                        <p>or</p>
+                        <p>what we can be for you!</p>
+                    </div>
+                </div>
+            </li>
+            <li class="nav_item">
+                <a class="nav_link" href="#">Gallery</a>
+                <div class="dropdown">
+                    <div class="gallery_box dropbox">
+                        <img src="assets/gallery.jpg" class="gallery" alt="">
+                        <p>Pictures from all our sites.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="nav_item border_right">
+                <a class="nav_link" href="#">Map</a>
+                <div class="dropdown right_drop">
+                    <div class="map_box dropbox">
+                        <img src="assets/worldmap.jpg" class="world" alt="">
+                        <p>Our 20 TOP-lacations</p>
+                    </div>
+                </div>
+            </li>
+            
+        </ul>
+    </nav>
+
+    <header class="title_header">
+        <div class="header_container">
+            <section class="title_box">
+                <h2 class="main_title">Showcase of funny JavaScript features</h2>
+            </section>
+        </div>
+    </header>
+
+    <main>
+        <div class="banner ban_one">
+        </div>
+
+        <article class="holiday">
+            <header class="theory_header">
+                <div class="subtitle_box">
+                    <h3 class="theory_title">Explore it all</h3>
+                </div>
+            </header>
+            <section class="intro">
+                <section class="paragraph">
+                    <div class="photo_box">
+                        <img src="" class="align_left slide_in" alt="">
+                    </div>
+                    <div class="textfield">
+                        <p class="text_part">
+                            <span class="startLetter">C</span>onsectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate,
+                            corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis
+                            <a href="" class="text_link">blanditiis</a> quod quas laborum nam! Fuga ad tempora in aspernatur pariaturlores 
+                            sunt esse magni, ut, dignissimos.
+                        </p>
+                    </div>
+                </section>
+                <section class="paragraph">
+                    <div class="textfield spec_field">
+                        <p class="text_part">
+                            <span class="startLetter">L</span>orem ipsum cupiditate, corporis a qui libero ipsum delectus quidem dolor at
+                            nulla, adipisci veniam in reiciendis aut asperiores omnis <a href="" class="text_link">blanditiis</a> quod quas 
+                            laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dignissimos. 
+                            Eum dolorum expedita quam, nesciunt at <a href="" class="text_link">provident</a> praesentium atque quas rerum 
+                            optio dignissimos repudiandae ullam illum quibusdam.
+                        </p>
+                    </div>
+                </section>
+                <section class="paragraph">
+                    <div class="textfield">
+                        <p class="text_part">
+                            <span class="startLetter">L</span>orem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum,
+                            est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis
+                            aut asperiores omnis blanditiis quod quas <a href="" class="text_link">laborum</a> nam! Fuga ad tempora in aspernatur 
+                            pariatur fugit quibusdam dolores sunt esse magni, ut, dignissimos.
+                        </p>
+                        <p class="text_part">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem 
+                            <a href="" class="text_link">cupiditate</a>, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci 
+                            veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur 
+                            fugit quibusdam dolores sunt esse magni, ut, dignissimos.
+                        </p>
+                    </div>
+                    <div class="photo_box">
+                        <img src="" class="align_right slide_in" alt="">
+                    </div>
+                </section>
+            </section>
+            <section class="explanation">
+                <section class="paragraph">
+                    <div class="photo_box">
+                        <img src="" class="align_left slide_in spec_margin" alt="">
+                    </div>
+                    <div class="textfield">
+                        <p class="text_part">
+                            <span class="startLetter">L</span>orem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, deserunt
+                            facilis et iste corrupti omnis tenetur est. Iste ut est dicta dolor itaque adipisci, dolorum minima, veritatis
+                            earum provident error molestias. Ratione magni illo sint vel velit ut excepturi 
+                            <a href="" class="text_link">consectetur</a> suscipit, earum modi accusamus voluptatem nostrum, praesentium numquam, 
+                            reiciendis voluptas sit id quisquam. Consequatur in quis reprehenderit modi perspiciatis necessitatibus saepe, 
+                            quidem, suscipit iure natus dignissimos ipsam, eligendi deleniti accusantium, rerum quibusdam fugit perferendis 
+                            et optio recusandae sed ratione. Culpa, dolorum reprehenderit harum ab voluptas fuga, nisi 
+                            <a href="" class="text_link">eligendi</a> natus maiores illum quas quos et aperiam aut doloremque optio
+                            maxime fugiat doloribus. Eum dolorum expedita quam, nesciunt at provident praesentium atque quas rerum optio
+                            dignissimos repudiandae ullam illum quibusdam.
+                        </p>
+                    </div> 
+                </section>
+                <section class="paragraph">
+                    <div class="textfield">
+                        <p class="text_part">
+                            <span class="startLetter">V</span>el ad error quibusdam, illo ex totam placeat. Quos excepturi fuga, molestiae
+                            ea quisquam minus, ratione dicta consectetur officia omnis, doloribus voluptatibus? Veniam ipsum veritatis
+                            architecto, provident quas consequatur <a href="" class="text_link">doloremque</a> quam quidem earum expedita, 
+                            ad delectus voluptatum, omnis praesentium nostrum qui aspernatur ea eaque adipisci et cumque ab? Ea voluptatum 
+                            dolore itaque odio. Eius minima distinctio harum, officia ab nihil exercitationem. Illo ex totam placeat.
+                        </p>
+                    </div>
+                    <div class="photo_box">
+                        <img src="" class="align_right slide_in" alt="">
+                    </div>
+                </section>
+                <section class="paragraph">
+                    <div class="textfield spec_field">
+                        <p class="text_part">
+                            <span class="startLetter">T</span>empora rem nemo nam temporibus molestias facilis minus ipsam quam doloribus
+                            consequatur debitis nesciunt tempore <a href="" class="text_link">officiis</a> aperiam quisquam, molestiae voluptates 
+                            cum, fuga culpa. Distinctio accusamus quibusdam, tempore perspiciatis dolorum optio facere consequatur quidem ullam 
+                            beatae architecto, ipsam sequi officiis dignissimos amet impedit natus necessitatibus tenetur repellendus dolor rem! 
+                            Dicta dolorem, iure, facilis illo ex nihil ipsa amet <a href="" class="text_link">officia</a>, optio temporibus eum 
+                            autem odit repellendus nisi. Possimus modi, corrupti error debitis doloribus dicta libero earum, sequi porro ut excepturi 
+                            nostrum ea voluptatem nihil culpa?
+                        </p>
+                    </div>
+                </section>
+                <section class="paragraph">
+                    <div class="photo_box special_box">
+                        <img src="" class="align_left slide_in" alt="">
+                    </div>
+                    <div class="textfield">
+                        <div class="sub_textfield">
+                            <p class="text_part">
+                                <span class="startLetter">U</span>llam expedita eligendi obcaecati reiciendis velit provident omnis quas qui in 
+                                corrupti est dolore facere ad hic, animi soluta assumenda consequuntur reprehenderit! Voluptate dolor nihil veniam 
+                                laborum voluptas nisi pariatur sed optio <a href="" class="text_link">accusantium</a> quam consectetur, corrupti, 
+                                sequi et consequuntur, excepturi doloremque. Tempore quis velit corporis neque fugit non sequi eaque rem hic. Facere, 
+                                inventore, aspernatur.
+                            </p>
+                            <div class="photo_box">
+                                <img src="" class="align_right slide_in align_spec" alt="">
+                            </div>
+                        </div>
+                        <p class="text_part">
+                            <span class="startLetter">A</span>ccusantium modi atque, asperiores qui nobis soluta cumque suscipit excepturi
+                            possimus doloremque odit saepe <a href="" class="text_link">perferendis</a> temporibus molestiae nostrum voluptatum 
+                            quis id sint quidem nesciunt culpa. Rerum labore dolor beatae blanditiis praesentium explicabo velit optio esse aperiam 
+                            similique, voluptatem cum, maiores ipsa tempore.
+                            <br>
+                            Reiciendis sed culpa atque inventore, nam ullam enim expedita consectetur id velit iusto alias vitae explicabo
+                            nemo neque odio reprehenderit soluta sint eaque. Aperiam, qui ut tenetur, voluptate doloremque officiis dicta
+                            quaerat voluptatem rerum natus magni. Eum amet <a href="" class="text_link">autem</a> dolor ullam.
+                        </p>
+                    </div>
+                </section>
+            </section>
+            <section class="conclusion">
+                <section class="paragraph">
+                    <div class="photo_box">
+                        <img src="" class="align_left slide_in" alt="">
+                    </div>
+                    <div class="textfield">
+                        <p class="text_part">
+                            <span class="startLetter">L</span>orem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio maiores adipisci
+                            quibusdam repudiandae dolor vero placeat esse sit! <a href="" class="text_link">Quibusdam</a> saepe aperiam explicabo 
+                            placeat optio, consequuntur nihil voluptatibus expedita quia vero perferendis, deserunt et incidunt eveniet temporibus 
+                            doloremque possimus facilis. Possimus labore, officia dolore!
+                        </p>
+                    </div>
+                </section>
+                <section class="paragraph">
+                    <div class="textfield">
+                        <p class="text_part">
+                            <span class="startLetter">E</span>aque ratione saepe, alias harum laboriosam deserunt laudantium blanditiis eum explicabo
+                            placeat reiciendis labore iste sint. Consectetur <a href="" class="text_link">expedita</a> dignissimos, non quos distinctio, 
+                            eos rerum facilis eligendi. Asperiores laudantium, rerum ratione consequatur, culpa consectetur possimus atque ab tempore
+                            illum non dolor nesciunt.
+                            <br>
+                            Neque, rerum. A vel non incidunt, quod doloremque dignissimos necessitatibus aliquid laboriosam architecto at cupiditate
+                            commodi expedita in, quae blanditiis. Deserunt labore sequi, repellat laboriosam est, doloremque culpa reiciendis tempore 
+                            excepturi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit ea minima laboriosam  soluta dolorum harum, aliquam 
+                            totam necessitatibus veniam, veritatis natus nobis, unde labore tempora autem debitis  earum 
+                            <a href="" class="text_link">laborum delectus</a> mollitia eveniet id quo reiciendis. Fugiat sapiente aperiam dignissimos 
+                            vero magni ullam dolor repellendus officia? Sunt quam doloribus deleniti consequuntur.
+                        </p>
+                    </div>
+                    <div class="photo_box">
+                        <img src="" class="align_right slide_in" alt="">
+                    </div>
+                </section>
+                <section class="paragraph">
+                    <div class="photo_box">
+                        <img src="" class="align_left slide_in spec_margin" alt="">
+                    </div>
+                    <div class="textfield">
+                        <p class="text_part">
+                            <span class="startLetter">P</span>ossimus modi, corrupti error debitis doloribus dicta libero earum, sequi porro ut excepturi
+                            nostrum ea voluptatem nihil culpa? <a href="" class="text_link">Ullam expedita</a> eligendi obcaecati reiciendis velit 
+                            provident omnis quas qui in corrupti est dolore facere ad hic, animi soluta assumenda consequuntur reprehenderit! Voluptate 
+                            dolor nihil veniam laborum voluptas nisi pariatur sed optio accusantium quam consectetur, corrupti, sequi et consequuntur,
+                            excepturi doloremque. Tempore quis velit corporis neque fugit non sequi eaque rem hic. Facere, inventore, aspernatur.
+                            <br>
+                            <a href="" class="text_link">Accusantium</a> modi atque, asperiores qui nobis soluta cumque suscipit excepturi possimus
+                            doloremque odit saepe perferendis temporibus molestiae nostrum voluptatum quis id sint quidem nesciunt culpa.
+                            Rerum labore dolor beatae blanditiis praesentium explicabo velit optio esse aperiam similique, voluptatem cum,
+                            maiores ipsa tempore. Reiciendis sed culpa atque inventore, nam ullam enim expedita consectetur id velit iusto
+                            alias vitae explicabo nemo neque odio <a href="" class="text_link">reprehenderit</a> soluta sint eaque. Aperiam, qui ut 
+                            tenetur, voluptate doloremque officiis dicta quaerat voluptatem rerum natus magni. Eum amet autem dolor ullam.
+                        </p>
+                    </div>
+                </section>
+            </section>
+        </article>
+
+        <div class="banner ban_two">
+        </div>
+
+        <header class="destinations">
+            <div class="img_container">
+                <div class="slides_container">
+                    <a class="prev" onclick="plusSlides(-1)"><p>&#10094;</p></a>
+                    <div class="photo_box">
+                        <div class="slides">
+                            <img src="assets/slideshow/sea.jpg" class="destiny_img" id="first_img" alt="">
+                        </div>
+                        <div class="slides">
+                            <img src="assets/slideshow/canyon.jpg" class="destiny_img" alt="">
+                        </div>
+                        <div class="slides">
+                            <img src="assets/slideshow/mountain.jpg" class="destiny_img" alt="">
+                        </div>
+                        <div class="slides">
+                            <img src="assets/slideshow/vulcano.jpg" class="destiny_img" alt="">
+                        </div>
+                        <div class="slides">
+                            <img src="assets/slideshow/lake.jpg" class="destiny_img" alt="">
+                        </div>
+                        <div class="slides">
+                            <img src="assets/slideshow/portal.jpg" class="destiny_img" alt="">
+                        </div>
+                    </div>
+                    <a class="next" onclick="plusSlides(1)"><p>&#10095;</p></a>
+                </div>
+                <div class="caption_container">
+                    <p id="caption"></p>
+                </div>          
+                <div class="slide_row">
+                    <div class="slide_col">
+                        <img src="assets/slideshow/sea.jpg" class="demo cursor" alt="Our seaside view" onclick="currentSlide(1)">
+                    </div>
+                    <div class="slide_col">
+                        <img src="assets/slideshow/canyon.jpg" class="demo cursor" alt="Our canyon resort view" onclick="currentSlide(2)">
+                    </div>
+                    <div class="slide_col">
+                        <img src="assets/slideshow/mountain.jpg" class="demo cursor" alt="Our moutain cabin view" onclick="currentSlide(3)">
+                    </div>
+                    <div class="slide_col">
+                        <img src="assets/slideshow/vulcano.jpg" class="demo cursor" alt="Our island view" onclick="currentSlide(4)">
+                    </div>
+                    <div class="slide_col">
+                        <img src="assets/slideshow/lake.jpg" class="demo cursor" alt="Our lake view" onclick="currentSlide(5)">
+                    </div>
+                    <div class="slide_col">
+                        <img src="assets/slideshow/portal.jpg" class="demo cursor" alt="Our relaxation center" onclick="currentSlide(6)">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="banner ban_three">
+        </div>
+
+        <article class="holiday">
+            <header class="theory_header">
+                <div class="subtitle_box">
+                    <h3 class="theory_title">Explore it all</h3>
+                </div>
+            </header>
+            <section class="intro">
+                <section class="paragraph">
+                    <div class="textfield">
+                        <p class="text_part">
+                            <span class="startLetter">L</span>orem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio maiores adipisci
+                            quibusdam repudiandae dolor vero placeat esse sit! Quibusdam saepe aperiam explicabo placeat optio, consequuntur nihil 
+                            voluptatibus expedita quia vero perferendis, deserunt et incidunt eveniet temporibus doloremque possimus facilis. 
+                            <a href="" class="text_link">Possimus</a> labore, officia dolore! Eaque ratione saepe, alias harum laboriosam deserunt 
+                            laudantium blanditiis eum explicabo placeat reiciendis labore iste sint. Consectetur expedita dignissimos, non quos culpa
+                            distinctio, eos rerum facilis eligendi. Asperiores laudantium, rerum ratione consequatur, culpa consectetur possimus atque 
+                            ab tempore illum non dolor nesciunt. Neque, culpa culpa culpa culpa rerum. A vel non incidunt, quod doloremque doloremque 
+                            dignissimos necessitatibus aliquid laboriosam architecto at cupiditate commodi <a href="" class="text_link">expedita</a> 
+                            in, quae blanditiis. Deserunt labore sequi, repellat laboriosam est, doloremque culpa reiciendis tempore excepturi.
+                        </p>
+                        <div class="sub_textfield">
+                            <div class="photo_box">
+                                <img src="" class="align_left slide_in" alt="">
+                            </div>
+                            <p class="text_part">
+                                <span class="startLetter">E</span>nim nostrum fugit itaque vel corporis ullam sed   tenetur ipsa qui rem quam error
+                                sint, libero. Laboriosam rem, ratione. Autem blanditiis laborum neque repudiandae quam, cumque, voluptate veritatis 
+                                itaque, placeat veniam ad nisi. <a href="" class="text_link">Expedita</a>, laborum reprehenderit ratione soluta velit 
+                                natus, odit mollitia. Corporis rerum minima fugiat in nostrum. Assumenda natus cupiditate hic quidem ex, quas, amet 
+                                ipsum esse dolore facilis beatae maxime qui inventore, iste? Maiores dignissimos dolore culpa debitis voluptatem harum,
+                                excepturi enim reiciendis, tempora ab ipsam illum aspernatur quasi qui porro saepe iure sunt eligendi tenetur
+                                quaerat ducimus quas sequi omnis aperiam suscipit! Reiciendis, maxime! Reiciendis, maxime!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="photo_box special_box">
+                        <img src="" class="align_right slide_in" alt="">
+                    </div>
+                </section>
+                <section class="paragraph">
+                    <div class="photo_box">
+                        <img src="" class="align_left slide_in spec_margin" alt="">
+                    </div> 
+                    <div class="textfield">
+                        <p class="text_part">
+                            <span class="startLetter">A</span>utem blanditiis laborum neque repudiandae quam, cumque, voluptate veritatis itaque,
+                            placeat veniam ad nisi. <a href="" class="text_link">Expedita</a>, laborum reprehenderit ratione soluta velit natus, odit 
+                            mollitia. Corporis rerum minima fugiat in nostrum. Assumenda natus cupiditate hic quidem ex, quas, amet ipsum esse dolore
+                            facilis beatae maxime qui inventore, iste? Maiores dignissimos dolore culpa debitis voluptatem harum, 
+                            <a href="" class="text_link">excepturi</a> enim reiciendis, tempora ab ipsam illum aspernatur quasi qui porro saepe iure 
+                            sunt eligendi tenetur quaerat ducimus quas sequi omnis aperiam suscipit! Molestiae obcaecati officiis quo, ratione eveniet, 
+                            rovident pariatur. Reiciendis, maxime! Reiciendis, maxime!
+                        </p>
+                    </div>
+                </section>
+            </section>
+
+            <div class="photo_drag_box">
+                <div class="photo_drag">
+                    <div class="item item1"></div>
+                    <div class="item item2"></div>
+                    <div class="item item3"></div>
+                    <div class="item item4"></div>
+                    <div class="item item5"></div>
+                    <div class="item item6"></div>
+                    <div class="item item7"></div>
+                    <div class="item item8"></div>
+                    <div class="item item9"></div>
+                    <div class="item item10"></div>
+                    <div class="item item11"></div>
+                    <div class="item item12"></div>
+                    <div class="item item13"></div>
+                </div>
+                <div class="drag_text">
+                    <h5>Click (mousewheel) & Drag</h5>
+                </div>
+            </div>
+
+            <section class="explanation">
+                <section class="paragraph">
+                    <div class="photo_box">
+                        <img src="" class="align_left slide_in" alt="">
+                    </div>
+                    <div class="textfield">
+                        <p class="text_part">
+                            <span class="startLetter">V</span>eniam quasi expedita distinctio, itaque molestiae sequi, dolorum nisi repellendus quia
+                            facilis iusto dignissimos nam? Tenetur fugit quos autem nihil, perspiciatis expedita enim tempore, alias ab maiores quis 
+                            necessitatibus distinctio molestias eum, quidem. Delectus impedit quidem laborum, fugit vel neque quo, ipsam, quasi aspernatur 
+                            quas odio nihil? Veniam amet reiciendis blanditiis quis reprehenderit repudiandae neque, ab ducimus, odit 
+                            <a href="" class="text_link">excepturi voluptate</a> saepe ipsam. Voluptatem eum error voluptas porro officiis, amet!
+                            <br>
+                            Molestias, fugit, ut! Tenetur fugit quos autem nihil, perspiciatis expedita enim tempore, alias ab maiores quis necessitatibus 
+                            distinctio molestias eum, quidem. Delectus impedit quidem laborum, fugit vel neque quo, ipsam, quasi aspernatur quas odio 
+                            <a href="" class="text_link">nihil</a>? Veniam amet reiciendis blanditiis quis reprehenderit repudiandae neque, ab ducimus, 
+                            odit excepturi voluptate saepe ipsam. Voluptatem eum error voluptas porro officiis, amet! Molestias, fugit, ut! 
+                        </p>
+                    </div>
+                </section>
+                <section class="paragraph">
+                    <div class="textfield spec_field">
+                        <p class="text_part">
+                            <span class="startLetter">L</span>orem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            <a href="" class="text_link">Distinctio</a> maiores adipisci quibusdam repudiandae dolor vero placeat esse sit! Quibusdam saepe 
+                            aperiam explicabo placeat optio, consequuntur nihil voluptatibus expedita quia vero perferendis, deserunt et incidunt eveniet 
+                            temporibus doloremque possimus facilis. Possimus labore, officia dolore!
+                        </p>
+                    </div>
+                </section>
+                <section class="paragraph">
+                    <div class="textfield">
+                        <p class="text_part">
+                            <span class="startLetter">L</span>orem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio maiores adipisci
+                            quibusdam repudiandae dolor vero placeat esse sit! Quibusdam saepe aperiam explicabo placeat optio, consequuntur nihil 
+                            voluptatibus expedita quia vero <a href="" class="text_link">perferendis</a>, deserunt et incidunt eveniet temporibus doloremque
+                            possimus facilis. Possimus labore, officia dolore! Eaque ratione saepe, alias harum laboriosam deserunt laudantium blanditiis 
+                            eum explicabo placeat reiciendis labore iste sint.
+                            <br>
+                            Consectetur expedita dignissimos, non quos distinctio, eos rerum facilis eligendi. Asperiores laudantium, rerum ratione consequatur, 
+                            culpa consectetur possimus atque ab tempore illum non dolor nesciunt. Neque, rerum. A vel non incidunt, quod doloremque dignissimos 
+                            necessitatibus aliquid laboriosam <a href="" class="text_link">architecto</a> at cupiditate commodi expedita in, quae blanditiis. 
+                            Deserunt labore sequi, repellat laboriosam est, doloremque culpa reiciendis tempore excepturi.
+                        </p>
+                    </div>
+                    <div class="photo_box">
+                        <img src="" class="align_right slide_in" alt="">
+                    </div>
+                </section>
+            </section>
+            <section class="conclusion">
+                <section class="paragraph">
+                    <div class="textfield spec_field">
+                        <p class="text_part">
+                            <span class="startLetter">E</span>aque ratione saepe, alias harum laboriosam deserunt laudantium blanditiis eum explicabo placeat
+                            reiciendis labore iste sint. Consectetur expedita dignissimos, non quos distinctio, eos rerum facilis eligendi. Asperiores laudantium, 
+                            rerum ratione consequatur, culpa consectetur possimus atque ab tempore illum non dolor nesciunt. Neque, rerum. A vel non incidunt, 
+                            quod doloremque dignissimos <a href="" class="text_link">necessitatibus</a> aliquid laboriosam architecto at cupiditate commodi 
+                            expedita in, quae blanditiis. Deserunt labore sequi, repellat laboriosam est, doloremque culpa reiciendis tempore excepturi.
+                        </p>
+                    </div>
+                </section>
+                <section class="paragraph">
+                    <div class="photo_box">
+                        <img src="" class="align_left slide_in" alt="">
+                    </div>
+                    <div class="textfield">
+                        <p class="text_part">
+                            <span class="startLetter">A</span>utem blanditiis laborum neque repudiandae quam, cumque, voluptate veritatis itaque, placeat
+                            veniam ad nisi. <a href="" class="text_link">Expedita</a>, laborum reprehenderit ratione soluta velit natus, odit mollitia.
+                            Corporis rerum minima fugiat in nostrum. Assumenda natus cupiditate hic quidem ex, quas, amet ipsum esse dolore facilis beatae maxime 
+                            qui inventore, iste? Maiores dignissimos dolore culpa debitis voluptatem harum, excepturi enim reiciendis, tempora tempora ab ipsam 
+                            illum <a href="" class="text_link">aspernatur</a> quasi qui porro saepe iure sunt eligendi tenetur quaerat ducimus quas sequi omnis 
+                            aperiam suscipit! Molestiae obcaecati officiis quo, ratione eveniet, provident pariatur.
+                        </p>
+                    </div>
+                </section>
+                <section class="paragraph">
+                    <div class="textfield">
+                        <p class="text_part">
+                            <span class="startLetter">V</span>eniam quasi <a href="" class="text_link">expedita distinctio</a>, itaque molestiae sequi, dolorum 
+                            nisi repellendus quia facilis iusto dignissimos nam? Tenetur fugit quos autem nihil, perspiciatis expedita enim tempore, alias ab 
+                            maiores quis necessitatibus distinctio molestias eum, quidem. Delectus impedit quidem laborum, fugit vel neque quo, ipsam, quasi 
+                            aspernatur quas odio nihil? <a href="" class="text_link">Veniam</a> amet reiciendis blanditiis quis reprehenderit repudiandae neque, 
+                            ab ducimus, odit excepturi voluptate saepe ipsam. Voluptatem eum error voluptas porro officiis, amet! Molestias, fugit, ut!
+                        </p>
+                    </div>
+                    <div class="photo_box">
+                        <img src="" class="align_right slide_in" alt="">
+                    </div>
+                </section>
+                <section class="paragraph">
+                    <div class="textfield spec_field">
+                        <p class="text_part">
+                            <span class="startLetter">E</span>nim nostrum fugit itaque vel corporis ullam sed tenetur ipsa qui rem quam error sint, libero.
+                            Laboriosam rem, ratione. Autem blanditiis laborum neque repudiandae quam, cumque, voluptate veritatis itaque, placeat veniam ad 
+                            nisi. <a href="" class="text_link">Expedita</a>, laborum reprehenderit ratione soluta velit natus, odit mollitia. Corporis rerum 
+                            minima fugiat in nostrum. Assumenda natus cupiditate hic quidem ex, quas, amet ipsum esse dolore facilis beatae maxime qui inventore, 
+                            iste? <a href="" class="text_link">Maiores dignissimos</a> dolore culpa debitis voluptatem harum, excepturi enim reiciendis, tempora 
+                            ab ipsam illum aspernatur quasi qui porro saepe iure sunt eligendi tenetur quaerat ducimus quas sequi omnis aperiam suscipit!
+                        </p>
+                    </div>
+                </section>
+            </section>
+        </article>
+
+        <div class="banner ban_four">
+        </div>
+
+        <div class="photo_panels_box" id="panel_box">
+            <div class="panel panel1">
+                <p class="smallP">Hey</p>
+                <p>Let's</p>
+                <p class="smallP">Move</p>
+            </div>
+            <div class="panel panel2">
+                <p class="smallP">Give</p>
+                <p>take</p>
+                <p class="smallP">Receive</p>
+            </div>
+            <div class="panel panel3">
+                <p class="smallP">Experience</p>
+                <p>it</p>
+                <p class="smallP">Today</p>
+            </div>
+            <div class="panel panel4">
+                <p class="smallP">Give</p>
+                <p>all</p>
+                <p class="smallP">You can</p>
+            </div>
+            <div class="panel panel5">
+                <p class="smallP">Life</p>
+                <p>in</p>
+                <p class="smallP">Motion</p>
+            </div>
+        </div>
+
+        <div class="banner ban_five">
+        </div>
+
+        <article class="holiday">
+            <header class="theory_header">
+                <div class="subtitle_box">
+                    <h3 class="theory_title">Explore it all</h3>
+                </div>
+            </header>
+            <section class="intro">
+                <section class="paragraph">
+                    <div class="textfield">
+                        <p class="text_part">
+                            <span class="startLetter">C</span>onsectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate,
+                            corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis
+                            blanditiis quod quas laborum nam! <a href="" class="text_link">Fuga</a> ad tempora in aspernatur pariaturlores 
+                            sunt esse magni, ut, dignissimos.
+                        </p>
+                        <br>
+                        <p class="text_part">
+                            <span class="startLetter">L</span>orem ipsum cupiditate, corporis a qui libero ipsum delectus quidem dolor at
+                            nulla, adipisci veniam in <a href="" class="text_link">reiciendis</a> aut asperiores omnis blanditiis quod quas 
+                            laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dignissimos. 
+                            Eum dolorum expedita quam, nesciunt at provident praesentium atque quas rerum optio dignissimos repudiandae 
+                            <a href="" class="text_link">ullam illum</a> quibusdam.
+                        </p>
+                    </div>
+                    <div class="photo_box">
+                        <img src="" class="align_right slide_in" alt="">
+                    </div>
+                </section>
+                <section class="paragraph">
+                    <div class="photo_box">
+                        <img src="" class="align_left slide_in spec_margin" alt="">
+                    </div>
+                    <div class="textfield">
+                        <p class="text_part">
+                            <span class="startLetter">L</span>orem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum,
+                            est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in 
+                            <a href="" class="text_link">reiciendis</a> aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora 
+                            in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dignissimos.
+                        </p>
+                        <p class="text_part">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis 
+                            a qui libero ipsum delectus quidem dolor at nulla, adipisci <a href="" class="text_link">veniam</a> in reiciendis
+                            aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam
+                            dolores sunt esse magni, ut, dignissimos.
+                        </p>
+                    </div>
+                </section>
+            </section>
+            <section class="explanation">
+                <section class="paragraph">
+                    <div class="textfield">
+                        <p class="text_part">
+                            <span class="startLetter">L</span>orem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, deserunt
+                            facilis et iste corrupti omnis tenetur est. Iste ut est dicta dolor itaque adipisci, dolorum minima, veritatis
+                            earum provident error molestias. Ratione magni illo sint vel velit ut excepturi consectetur suscipit, earum modi
+                            accusamus voluptatem nostrum, praesentium numquam, <a href="" class="text_link">reiciendis</a> voluptas sit id 
+                            quisquam. Consequatur in quis reprehenderit modi perspiciatis necessitatibus saepe, quidem, suscipit iure natus 
+                            dignissimos ipsam, eligendi deleniti accusantium, rerum quibusdam fugit 
+                            <a href="" class="text_link">perferendis et optio</a> recusandae sed ratione. Culpa, dolorum reprehenderit harum 
+                            ab voluptas fuga, nisi eligendi natus maiores illum quas quos et aperiam aut doloremque optio maxime fugiat 
+                            doloribus. Eum dolorum expedita quam, nesciunt at provident praesentium atque quas rerum optio dignissimos 
+                            repudiandae ullam illum quibusdam.
+                        </p>
+                    </div>
+                    <div class="photo_box">
+                        <img src="" class="align_right slide_in" alt="">
+                    </div>
+                </section>
+                <section class="paragraph">
+                    <div class="photo_box">
+                        <img src="" class="align_left slide_in spec_margin" alt="">
+                    </div>
+                    <div class="textfield">
+                        <p class="text_part">
+                            <span class="startLetter">V</span>el ad error quibusdam, illo ex totam placeat. Quos excepturi fuga, molestiae
+                            ea quisquam minus, ratione dicta consectetur officia omnis, doloribus voluptatibus? Veniam ipsum veritatis
+                            <a href="" class="text_link">architecto</a>, provident quas consequatur doloremque quam quidem earum expedita, 
+                            ad delectus voluptatum, omnis <a href="" class="text_link">praesentium</a> nostrum qui aspernatur ea eaque 
+                            adipisci et cumque ab? Ea voluptatum dolore itaque odio. Eius minima distinctio harum, officia ab nihil 
+                            exercitationem.
+                        </p>
+                    </div>
+                </section>
+                <section class="paragraph">
+                    <div class="textfield">
+                        <p class="text_part">
+                            <span class="startLetter">T</span>empora rem nemo nam temporibus molestias facilis minus ipsam quam doloribus
+                            consequatur debitis nesciunt tempore <a href="" class="text_link">officiis</a> aperiam quisquam, molestiae 
+                            voluptates cum, fuga culpa. Distinctio accusamus quibusdam, tempore perspiciatis dolorum optio facere consequatur 
+                            quidem ullam beatae architecto, ipsam sequi <a href="" class="text_link"></a>officiis</a> dignissimos amet impedit 
+                            natus necessitatibus tenetur repellendus dolor rem!
+                            <br>
+                            Dicta dolorem, iure, facilis illo ex nihil ipsa amet officia, 
+                            optio temporibus eum autem odit repellendus nisi. Possimus modi, corrupti error debitis doloribus dicta libero earum, 
+                            sequi porro ut excepturi nostrum ea voluptatem nihil culpa?
+                        </p>
+                        <br>
+                        <p class="text_part">
+                            <span class="startLetter">U</span>llam expedita eligendi obcaecati reiciendis velit provident omnis quas qui in corrupti 
+                            est dolore facere ad hic, <a href="" class="text_link">animi soluta</a> assumenda consequuntur reprehenderit! Voluptate 
+                            dolor nihil veniam laborum voluptas nisi pariatur sed optio accusantium quam consectetur, corrupti, sequi et consequuntur, 
+                            excepturi doloremque. Tempore quis velit corporis neque fugit non sequi eaque rem hic. Facere, inventore, aspernatur.
+                        </p>
+                    </div>
+                    <div class="photo_box">
+                        <img src="" class="align_right slide_in" alt="">
+                    </div>
+                </section>
+                <section class="paragraph">
+                    <div class="textfield spec_field"> 
+                        <p class="text_part">
+                            <span class="startLetter">A</span>ccusantium modi atque, asperiores qui nobis soluta cumque suscipit excepturi
+                            possimus doloremque odit saepe perferendis temporibus molestiae nostrum voluptatum quis id sint quidem nesciunt
+                            culpa. Rerum labore dolor beatae blanditiis <a href="" class="text_link">praesentium explicabo</a> velit optio 
+                            esse aperiam similique, voluptatem cum, maiores ipsa tempore.
+                        </p>
+                    </div>
+                </section>
+                <section class="paragraph">
+                    <div class="textfield"> 
+                        <p class="text_part">
+                            <span class="startLetter">R</span>eiciendis sed culpa atque inventore, nam ullam enim expedita consectetur id velit iusto 
+                            alias vitae explicabo nemo neque odio reprehenderit soluta sint eaque. Aperiam, qui ut tenetur, voluptate doloremque 
+                            <a href="" class="text_link">officiis</a> dicta quaerat voluptatem rerum natus magni. Eum amet autem dolor ullam.
+                        </p>
+                    </div>
+                    <div class="photo_box">
+                        <img src="" class="align_right slide_in" alt="">
+                    </div>
+                </section>
+            </section>
+            <section class="conclusion">
+                <section class="paragraph">
+                    <div class="photo_box">
+                        <img src="" class="align_left slide_in" alt="">
+                    </div>
+                    <div class="textfield">
+                        <p class="text_part">
+                            <span class="startLetter">L</span>orem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio maiores
+                            adipisci quibusdam repudiandae dolor vero placeat esse sit! Quibusdam saepe aperiam explicabo placeat optio,
+                            consequuntur nihil voluptatibus <a href="" class="text_link">expedita</a> quia vero perferendis, deserunt et 
+                            incidunt eveniet temporibus doloremque possimus facilis. Possimus labore, officia dolore!
+                            <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi modi natus excepturi exercitationem magnam, 
+                            sunt doloremque tempora molestias, iusto sed, adipisci quia odit praesentium dicta id reprehenderit at vel. 
+                            Eaque consectetur non iste aliquid totam libero rem praesentium assumenda eum deleniti dolorem a fugit debitis 
+                            eius autem tenetur mollitia provident, laboriosam tempore optio <a href="" class="text_link">omnis officiis</a>, 
+                            earum vero explicabo. 
+                            Dolores, ab!
+                        </p>
+                    </div>
+                </section>
+                <section class="paragraph">
+                    <div class="textfield">
+                        <p class="text_part">
+                            <span class="startLetter">E</span>aque ratione saepe, alias harum laboriosam deserunt 
+                            <a href="" class="text_link">laudantium</a> blanditiis eum explicabo placeat reiciendis labore iste sint. 
+                            Consectetur expedita dignissimos, non quos distinctio, eos rerum facilis eligendi. Asperiores laudantium, 
+                            rerum ratione consequatur, culpa consectetur possimus atque ab tempore illum non dolor nesciunt.
+                            <br>
+                            Neque, rerum. A vel non incidunt, quod doloremque dignissimos necessitatibus aliquid laboriosam architecto at
+                            cupiditate commodi expedita in, quae blanditiis. Deserunt labore sequi, repellat laboriosam est, doloremque culpa
+                            reiciendis tempore excepturi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit ea minima laboriosam 
+                            soluta dolorum harum, aliquam totam necessitatibus veniam, veritatis natus nobis, unde labore tempora autem debitis 
+                            earum laborum delectus mollitia eveniet id quo reiciendis. <a href="" class="text_link">Fugiat</a> sapiente aperiam 
+                            dignissimos vero magni ullam dolor repellendus officia? Sunt quam doloribus deleniti consequuntur.
+                        </p>
+                    </div>
+                    <div class="photo_box">
+                        <img src="" class="align_right slide_in" alt="">
+                    </div>
+                </section>
+                <section class="paragraph">
+                    <div class="photo_box special_box">
+                        <img src="" class="align_left slide_in" alt="">
+                    </div>
+                    <div class="textfield">
+                        <div class="sub_textfield">
+                            <div class="photo_box">
+                                <img src="" class="align_right slide_in spec_margin" alt="">
+                            </div>
+                            <p class="text_part spec_text">
+                                <span class="startLetter">P</span>ossimus modi, corrupti error debitis doloribus dicta libero earum, sequi porro
+                                ut excepturi nostrum ea voluptatem nihil culpa? Ullam <a href="" class="text_link">expedita</a> eligendi obcaecati 
+                                reiciendis velit provident omnis quas qui in corrupti est dolore facere ad hic, animi soluta assumenda consequuntur 
+                                reprehenderit! Voluptate dolor nihil veniam laborum voluptas nisi pariatur sed optio accusantium quam consectetur, 
+                                corrupti, sequi et consequuntur, excepturi doloremque.
+                                <br>
+                                Tempore quis velit corporis neque fugit non sequi eaque rem hic. Facere, inventore, aspernatur. Accusantium modi 
+                                atque, asperiores qui nobis soluta cumque suscipit excepturi possimus doloremque odit saepe perferendis temporibus 
+                                molestiae nostrum voluptatum quis id sint quidem nesciunt culpa. Rerum labore dolor beatae blanditiis praesentium 
+                                <a href="" class="text_link">explicabo velit</a> optio esse aperiam similique, voluptatem cum, maiores ipsa tempore. 
+                                Reiciendis sed culpa atque inventore, nam ullam enim expedita consectetur id velit iusto alias vitae explicabo nemo 
+                                neque odio reprehenderit soluta sint eaque. Aperiam, qui ut tenetur, voluptate doloremque officiis dicta quaerat 
+                                voluptatem rerum natus magni. Eum amet autem dolor ullam.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </article>
+        <div class="banner ban_six">
+        </div>
+
+        <div class="tv_box">
+            <video class="player_video viewer" src="assets/video/Ocean.mp4"></video>
+            <div class="player_controls">
+                <div class="progress">
+                    <div class="progress_filled"></div>
+                </div>
+                <div class="controlers">
+                    <div class="slider_box">
+                        <label class="range_labels">
+                            <img class="volume_icon" src="assets/video/volume.png" alt="">
+                            <input type="range" name="volume" class="player_slider" min="0" max="1" step="0.05" value="O.25" placeholder="volume">
+                        </label>
+                    </div>
+                    <button class="player_button toggle" title="Toggle Play">▶</button>
+                    <button data-skip="-10" class="player_button">« 10</button>
+                    <button data-skip="10" class="player_button">10 »</button>
+                    <button data-skip="" class="player_button fullscreen">
+                          <img class="fullscreen_icon" src="assets/video/full_screen_open.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="player_bottom">
+              <div class="play_warning"></div>
+            </div>
+        </div>
+
+        <div class="banner ban_seven">
+        </div>
+    </main>
+
+    <script src="interactivity.js"></script>
+</body>
+</html>

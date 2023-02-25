@@ -1,0 +1,25 @@
+html, body {
+    margin: 0;
+}
+
+section {
+    padding: 50px;
+    background-color: lightgray;
+}
+
+label {
+    vertical-align: top;
+    position: absolute;
+    margin: 0 50px;
+    color: #233459;
+    font-size: 36px;
+    text-shadow: 1px 2px 1px goldenrod, -1px -2px 1px goldenrod;
+}
+
+canvas {
+    margin: 48px 50px;
+    border: 4px solid #24365c;
+    border-radius: 20px;
+    box-shadow: inset 2px 2px 12px goldenrod, inset -2px -2px 12px goldenrod;
+    background-color: #191919;
+}
