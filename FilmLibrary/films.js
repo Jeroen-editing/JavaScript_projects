@@ -80,7 +80,7 @@ const showFilm = (movie) => {
 
     // Foto
     // ----
-    getById('filmFoto').src = next_film.getFoto();
+    getById('filmFoto').src = `assets/img/${next_film.getFoto()}`;
  
     // Genres
     // ------
@@ -102,7 +102,7 @@ const showFilm = (movie) => {
     // ------
     let ratingStars = [];
     for (let k = 0; k < next_film.getRating(); k++) {
-        ratingStars += `<img class="rating_star" id="ratingStar" src="ster.png" alt="rating star">`;
+        ratingStars += `<img class="rating_star" id="ratingStar" src="assets/icons/ster.png" alt="rating star">`;
     }
     getById('ratingBox').innerHTML = ratingStars;
 
