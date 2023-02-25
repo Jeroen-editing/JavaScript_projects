@@ -46,7 +46,7 @@ const checkScreen =  () => {
     // kijken hoe hoog het scherm is
     let screen_height = window.innerHeight;
     // de tittelhoogte en buttonhoogte er af halen
-    let max_height = screen_height - (140);
+    let max_height = screen_height - (135);
     // de gefixeerde hoogte instellen
     info.style.minHeight = `${max_height}px`;
     info.style.maxHeight = `${max_height}px`;
@@ -129,7 +129,8 @@ const showFilm = (movie) => {
 // **********************************
 const filmLibrary = () => {
     // De gegevens uit het JSON-file halen
-    fetch("films.json") 
+    // Ik heb de fetch("films.json") vervangen om de error v/d CORS & Cross origin requests te vermijden
+    fetch("https://jeroen-editing.github.io/JavaScript_projects/FilmLibrary/films.json") 
         .then(movies => movies.json())
         .then(movies => {
             let i = 0;
