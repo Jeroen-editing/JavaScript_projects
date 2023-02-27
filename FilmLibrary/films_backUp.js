@@ -39,32 +39,6 @@ let regisseurs = movies[i].regisseurs;
 ('movies' is dan natuurlijk de response v/d fetch() verderop):
 */
 
-let main_body = document.querySelector('body');
-console.log(main_body);
-main_body.setAttribute('id', 'body');
-
-let film_titel = document.querySelector('h1');
-console.log(film_titel);
-film_titel.setAttribute('class', 'film_title');
-film_titel.setAttribute('id', 'filmTitle');
-
-let elements = document.querySelectorAll('h2');
-console.log(elements);
-elements.forEach( el => {
-    el.setAttribute('class', 'sub_title');
-    el.textContent === "Beschrijving:" ? 
-        el.classList.add('inhoud_title') + el.setAttribute('id', 'inhoudTitle') :
-        el.textContent === "Cast:" ?
-            el.classList.add('cast_title') + el.setAttribute('id', 'castTitle') :
-            el.textContent === "Foto:" ?
-                el.classList.add('foto_title') + el.setAttribute('id', 'fotoTitle') :
-                el.textContent === "Genres:" ?
-                    el.classList.add('genres_title') + el.setAttribute('id', 'genresTitle') :
-                    el.textContent === "Rating:" ?
-                        el.classList.add('rating_title') + el.setAttribute('id', 'ratingTitle') :
-                        el.classList.add('director_title') + el.setAttribute('id', 'directorTitle');
-});
-
 // (extra) eerst de html aanpassen
 // *******************************
 const insertAfter = (newNode, existingNode, attribute, attributeContent) => {
@@ -126,7 +100,7 @@ let rating_box = createEl('div');
 insertAfter(rating_box, rating_titel, 'class', 'rating_box');
 
 // directors in sectie zetten en 'ul' element toevoegen
-let directors_titel = getById('directorTitle');
+let directors_titel = getById('directorsTitle');
 section.appendChild(directors_titel);
 let directors_ul = createEl('ul');
 insertAfter(directors_ul, directors_titel, 'class', 'director_list');
@@ -145,7 +119,6 @@ const checkScreen =  () => {
     info.style.minHeight = `${max_height}px`;
     info.style.maxHeight = `${max_height}px`;
 }
-
 // functie om de film-info in het juiste html element te zetten
 // ************************************************************
 const showFilm = (movie) => {
