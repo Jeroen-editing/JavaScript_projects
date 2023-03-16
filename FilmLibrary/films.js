@@ -1,8 +1,8 @@
 
 /* Ik maak altijd even een functie om de html elementen (hier per ID)
 te selecteren, zodat ik dit niet steeds voluit moet schrijven. */
-const getById = (id) => (document.getElementById(id));
-const createEl = (e) => (document.createElement(e));
+const getById = id => (document.getElementById(id));
+const createEl = e => (document.createElement(e));
 
 // Ik gebruik een 'class', al is dat niet echt nodig
 // **************************************************
@@ -18,13 +18,13 @@ class Film {
         this.rating = movie.rating
         this.directors = movie.regisseurs;
 
-        this.getTitle = () => {return this.titel};
-        this.getInhoud = () => {return this.inhoud};
-        this.getActors = () => {return this.actors};
-        this.getFoto = () => {return this.foto};
-        this.getGenres = () => {return this.genres};
-        this.getRating = () => {return this.rating};
-        this.getDirectors = () => {return this.directors};
+        this.getTitle = () => this.titel;
+        this.getInhoud = () => this.inhoud;
+        this.getActors = () => this.actors;
+        this.getFoto = () => this.foto;
+        this.getGenres = () => this.genres;
+        this.getRating = () => this.rating;
+        this.getDirectors = () => this.directors;
     }
 }
 /*
@@ -39,15 +39,20 @@ let regisseurs = movies[i].regisseurs;
 ('movies' is dan natuurlijk de response v/d fetch() verderop):
 */
 
+// (extra) eerst de html aanpassen
+// *******************************
+// body voorzien van een id
 let main_body = document.querySelector('body');
 console.log(main_body);
 main_body.setAttribute('id', 'body');
 
+// de film-titel voorzien van de juiste class en id
 let film_titel = document.querySelector('h1');
 console.log(film_titel);
 film_titel.setAttribute('class', 'film_title');
 film_titel.setAttribute('id', 'filmTitle');
 
+// elke sub-titel voorzien van de juiste class en id
 let elements = document.querySelectorAll('h2');
 console.log(elements);
 elements.forEach( el => {
@@ -65,8 +70,7 @@ elements.forEach( el => {
                         el.classList.add('director_title') + el.setAttribute('id', 'directorTitle');
 });
 
-// (extra) eerst de html aanpassen
-// *******************************
+// functie om een tag na de titels in te voeren, maar wel met de insertBefore() method
 const insertAfter = (newNode, existingNode, attribute, attributeContent) => {
     existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
     newNode.setAttribute(attribute, attributeContent);
@@ -131,6 +135,13 @@ section.appendChild(directors_titel);
 let directors_ul = createEl('ul');
 insertAfter(directors_ul, directors_titel, 'class', 'director_list');
 
+// div voor de butons
+let btn_box = document.createElement('div');
+btn_box.setAttribute('class', 'btn_box');
+page.appendChild(btn_box);
+btn_box.appendChild(document.getElementById('previous'));
+btn_box.appendChild(document.getElementById('next'));
+
 
 // (extra) functie om de buttons vast, onderaan het beeldscherm te plaatsen
 // ************************************************************************
@@ -148,7 +159,7 @@ const checkScreen =  () => {
 
 // functie om de film-info in het juiste html element te zetten
 // ************************************************************
-const showFilm = (movie) => {
+const showFilm = movie => {
     // Eerst maken we een instance van de geselecteerde film
     // -----------------------------------------------------
     const next_film = new Film(movie);
@@ -171,6 +182,12 @@ const showFilm = (movie) => {
     en moet je die er weer uit halen met array.join(''). */
     next_film.getActors().forEach((actor) => {actorsList += `<li>${actor}</li>`});
     cast_ul.innerHTML = actorsList;
+    /* Test uit de cursus, want for ... of genruikte ik nog niet vaak !!! werkt ook !!!
+    for (actor of next_film.getActors()) {
+        actorsList += `<li>${actor}</li>`;
+    }
+    cast_ul.innerHTML = actorsList;
+    */
 
     // Foto
     // ----
@@ -238,11 +255,11 @@ const filmLibrary = () => {
             previous_btn.disabled = true;
             
             // de html-classes voor de buttons benoemen
-            let active = 'btn_active' 
+            let active = 'btn_active';
             let inactive = 'btn_inactive';
 
             // functies voor de button-acties
-            const previous = (i) => {
+            const previous = i => {
                 // Volgende film weergeven
                 showFilm(movies[i]);
                 // 'Volgende-button' aanzetten
@@ -255,7 +272,7 @@ const filmLibrary = () => {
                     previous_btn.classList.replace(active, inactive); 
                 }
             };
-            const next = (i) => {
+            const next = i => {
                 // Vorige film weergeven
                 showFilm(movies[i]);
                 // 'Vorige-button' aanzetten

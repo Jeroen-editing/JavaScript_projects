@@ -1,0 +1,252 @@
+* {
+  margin: 0 0;
+  padding: 0 0; }
+
+body {
+  font-family: Arial; }
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  background-color: #708984;
+  border-right: 2px solid black;
+  border-left: 2px solid black; }
+  .container .banner {
+    width: 100%;
+    height: 126px;
+    margin: 0 auto;
+    padding: 0 0;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background: url("../banner.jpg") no-repeat;
+    background-size: cover; }
+  .container h2 {
+    top: 0;
+    width: 100%;
+    font-size: 2.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+    margin: 0 auto;
+    padding: .8rem 0 .4rem 0;
+    background: #88aaa3;
+    border-bottom: 2px solid black; }
+  .container .keuzeLabel_box,
+  .container .aantalLabel_box,
+  .container .select_box,
+  .container .aantal_box,
+  .container .button_box,
+  .container .table_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    width: 80%;
+    margin: 0 auto;
+    border-right: 1px solid rgba(23, 131, 73, 0.8);
+    border-left: 1px solid rgba(23, 131, 73, 0.8);
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black; }
+  .container .keuzeLabel_box label,
+  .container .aantalLabel_box label {
+    cursor: pointer;
+    width: 35%;
+    max-width: 35%;
+    height: 1.8rem;
+    margin: 0 auto;
+    padding: .1rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: .1rem;
+    line-height: 1.9rem;
+    text-transform: uppercase;
+    background: rgba(23, 131, 73, 0.25);
+    border-right: 1px solid black; }
+  .container .keuzeLabel_box span,
+  .container .aantalLabel_box span {
+    display: block;
+    opacity: 0;
+    width: 65%;
+    max-width: 65%;
+    height: 1.8rem;
+    margin: 0 auto;
+    padding: .1rem 0;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: .2rem;
+    text-align: center;
+    line-height: 1.8rem;
+    text-shadow: 1px 1px 1px black;
+    background: rgba(96, 0, 0, 0.4); }
+  .container .select_box,
+  .container .aantal_box {
+    height: 3.5rem;
+    background-color: #54777d; }
+  .container select, .container input {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 2rem;
+    margin: 0 auto 1rem auto;
+    font-size: 1.1em;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-bottom: 1px solid black;
+    box-shadow: inset 0px 0px 2px #2d2d2d, inset 0px 0px 4px #b4b4b4;
+    outline: none; }
+  .container .select_box select option {
+    width: 100%;
+    height: 1.6rem;
+    margin: 0 auto;
+    text-align: center; }
+  .container .aantal_box input::placeholder {
+    color: #585858; }
+  .container .button_box {
+    background-color: #54777d; }
+    .container .button_box button {
+      width: 100%;
+      height: 3rem;
+      margin: 0 auto;
+      font-size: 20px;
+      letter-spacing: 2px;
+      border: none;
+      box-shadow: none; }
+      .container .button_box button:disabled {
+        color: rgba(255, 255, 255, 0.4);
+        background: #909090;
+        background: #6a6969;
+        background: linear-gradient(180deg, rgba(106, 105, 105, 0.6) 0%, rgba(131, 131, 131, 0.6) 15%, rgba(144, 144, 144, 0.6) 30%, rgba(152, 152, 152, 0.6) 45%, rgba(152, 152, 152, 0.6) 55%, rgba(144, 144, 144, 0.6) 70%, rgba(131, 131, 131, 0.6) 85%, rgba(106, 105, 105, 0.6) 100%); }
+      .container .button_box button:enabled {
+        color: white;
+        background: #0d4526;
+        background: linear-gradient(180deg, rgba(13, 69, 38, 0.6) 0%, rgba(18, 99, 55, 0.6) 15%, rgba(21, 119, 66, 0.6) 30%, rgba(23, 131, 73, 0.6) 45%, rgba(23, 131, 73, 0.6) 55%, rgba(21, 119, 66, 0.6) 70%, rgba(18, 99, 55, 0.6) 85%, rgba(13, 69, 38, 0.6) 100%); }
+  .container .table_box {
+    display: block;
+    width: 80%;
+    min-height: 400px;
+    padding: 1rem 0 0 0;
+    background-color: #54777d;
+    border-top: none;
+    border-bottom: none; }
+    .container .table_box #mandje {
+      width: 100%;
+      margin: 0 auto;
+      padding: .6rem 0; }
+      .container .table_box #mandje #mandjeTable {
+        width: 98%;
+        margin: 0 auto;
+        border-collapse: separate;
+        border-spacing: 4px;
+        background: #b5b5b5;
+        border: 1px solid #4d4d4d; }
+        .container .table_box #mandje #mandjeTable #mandjeTHead {
+          width: 96%; }
+          .container .table_box #mandje #mandjeTable #mandjeTHead #titleRow {
+            width: 100%;
+            background: rgba(57, 119, 86, 0.6);
+            font-weight: bold; }
+            .container .table_box #mandje #mandjeTable #mandjeTHead #titleRow th {
+              column-span: 1;
+              margin: 0 0;
+              padding: 6px 0 6px 6px;
+              color: white;
+              font-size: 20px;
+              text-align: left;
+              letter-spacing: 1px;
+              text-shadow: 1px 1px 2px black;
+              background: transparent;
+              border-right: 2px solid #4d4d4d;
+              border-bottom: 1px solid #4d4d4d; }
+            .container .table_box #mandje #mandjeTable #mandjeTHead #titleRow #naamTitle {
+              width: 190px;
+              max-width: 190px; }
+            .container .table_box #mandje #mandjeTable #mandjeTHead #titleRow #prijsTile {
+              max-width: 65px; }
+            .container .table_box #mandje #mandjeTable #mandjeTHead #titleRow #aantalTitle {
+              max-width: 65px; }
+            .container .table_box #mandje #mandjeTable #mandjeTHead #titleRow #totaalTitle {
+              width: 130px;
+              max-width: 130px; }
+            .container .table_box #mandje #mandjeTable #mandjeTHead #titleRow #deleteTitle {
+              max-width: 20px;
+              padding: 4px 0;
+              font-size: 18px;
+              text-align: center; }
+        .container .table_box #mandje #mandjeTable #mandjeTBody {
+          width: 96%; }
+          .container .table_box #mandje #mandjeTable #mandjeTBody .groente_rij {
+            width: 100%; }
+            .container .table_box #mandje #mandjeTable #mandjeTBody .groente_rij td {
+              margin: 0 0;
+              padding: 4px 6px 3px 0;
+              color: #464e5e;
+              text-align: right;
+              font-size: 16px;
+              text-transform: capitalize;
+              background: transparent;
+              border-right: 2px solid #797979;
+              border-bottom: 1px solid #797979; }
+            .container .table_box #mandje #mandjeTable #mandjeTBody .groente_rij .naam {
+              width: 190px;
+              max-width: 190px;
+              color: #305359;
+              font-size: 18px;
+              font-weight: bold; }
+            .container .table_box #mandje #mandjeTable #mandjeTBody .groente_rij .prijs {
+              max-width: 65px; }
+            .container .table_box #mandje #mandjeTable #mandjeTBody .groente_rij .aantal {
+              max-width: 65px; }
+            .container .table_box #mandje #mandjeTable #mandjeTBody .groente_rij .totaal {
+              width: 130px;
+              max-width: 130px;
+              overflow: hidden;
+              overflow-x: scroll; }
+            .container .table_box #mandje #mandjeTable #mandjeTBody .groente_rij .remove {
+              max-width: 20px;
+              padding: 0 0;
+              border-right: 2px solid #4d4d4d;
+              border-bottom: 1px solid #4d4d4d; }
+              .container .table_box #mandje #mandjeTable #mandjeTBody .groente_rij .remove a {
+                width: 100%;
+                padding: 7px 0 6px 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                background: rgba(96, 0, 0, 0.7); }
+                .container .table_box #mandje #mandjeTable #mandjeTBody .groente_rij .remove a img {
+                  width: 16px;
+                  height: 16px; }
+          .container .table_box #mandje #mandjeTable #mandjeTBody tr:nth-child(even) {
+            background-color: white; }
+          .container .table_box #mandje #mandjeTable #mandjeTBody tr:nth-child(odd) {
+            background-color: #d4d4d4; }
+        .container .table_box #mandje #mandjeTable #mandjeTFoot {
+          width: 96%; }
+          .container .table_box #mandje #mandjeTable #mandjeTFoot #totaal_rij {
+            width: 100%;
+            background: rgba(121, 132, 126, 0.8); }
+            .container .table_box #mandje #mandjeTable #mandjeTFoot #totaal_rij td {
+              margin: 0 0;
+              padding: 5px 6px 3px 0;
+              color: white;
+              text-align: right;
+              font-size: 18px;
+              text-transform: capitalize;
+              text-shadow: 1px 1px 2px black;
+              background: transparent;
+              border-right: 2px solid #4d4d4d;
+              border-bottom: 1px solid #4d4d4d; }
+            .container .table_box #mandje #mandjeTable #mandjeTFoot #totaal_rij .totaalTitel {
+              font-weight: bold;
+              letter-spacing: 2px; }
+            .container .table_box #mandje #mandjeTable #mandjeTFoot #totaal_rij .empty {
+              max-width: 20px;
+              padding: 5px 0 3px 6px;
+              text-align: left;
+              background: transparent; }
+
+/*# sourceMappingURL=groentenwinkel.css.map */

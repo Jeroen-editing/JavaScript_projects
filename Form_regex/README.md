@@ -1,4 +1,4 @@
-# regex-playlist
+## Form with regex validation
 
-watch form at:
-https://jeroen-editing.github.io/regex-playlist/
+https://jeroen-editing.github.io/JavaScript_projects/Form_regex/index.html/index.html
+

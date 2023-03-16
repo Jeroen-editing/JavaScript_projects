@@ -1,0 +1,339 @@
+* {
+    margin: 0 0;
+    padding: 0 0;
+}
+body {
+	font-family: Arial;
+}
+.container {
+    max-width: 768px;
+    margin: 0 auto;
+    background-color: rgb(112, 137, 132);
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+
+    .banner {
+        width: 100%;
+        height: 126px;
+        margin: 0 auto;
+        padding: 0 0;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        background: url('../banner.jpg') no-repeat;
+        background-size: cover;
+    }
+    h2 {
+        top: 0;
+        width: 100%;
+        //min-height: 50px;
+        font-size: 2.2rem;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: .4rem;
+        margin: 0 auto;
+        padding: .8rem 0 .4rem 0;
+        background: rgb(136, 170, 163);
+        border-bottom: 2px solid black;
+    }
+    .keuzeLabel_box,
+    .aantalLabel_box,
+    .select_box,
+    .aantal_box,
+    .button_box,
+    .table_box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: flex-start;
+        width: 80%;
+        margin: 0 auto;
+        border-right: 1px solid rgba(23, 131, 73, 0.8);
+        border-left: 1px solid rgba(23, 131, 73, 0.8);
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+    }
+    .keuzeLabel_box,
+    .aantalLabel_box {
+        label {
+            cursor: pointer;
+            width: 35%;
+            max-width: 35%;
+            height: 1.8rem;
+            margin: 0 auto;
+            padding: .1rem 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: .1rem;
+            line-height: 1.9rem;
+            text-transform: uppercase;
+            background: rgba(23, 131, 73, 0.25);
+            //border-right: 1px solid rgba(23, 131, 73, 0.8);
+            border-right: 1px solid black;
+        }
+        span {
+            display: block;
+            opacity: 0;
+            width: 65%;
+            max-width: 65%;
+            height: 1.8rem;
+            margin: 0 auto;
+            padding: .1rem 0;
+            color: white;
+            font-weight: lighter;
+            letter-spacing: .2rem;
+            text-align: center;
+            line-height: 1.8rem;
+            text-shadow: 1px 1px 1px black;
+            background: rgba(96, 0, 0, 0.4);
+        }
+    }
+    .select_box,
+    .aantal_box {
+        height: 3.5rem;
+        background-color: rgb(84, 119, 125);
+    }
+    select, input {
+        cursor: pointer;
+        display: block;
+        width: 100%;
+        height: 2rem;
+        margin: 0 auto 1rem auto;
+        font-size: 1.1em;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.5);
+        border: none;
+        border-bottom: 1px solid black;
+        box-shadow: inset 0px 0px 2px rgb(45, 45, 45), inset 0px 0px 4px rgb(180, 180, 180);
+        outline: none;
+    }
+    .select_box {
+        select {
+            option {
+                width: 100%;
+                height: 1.6rem;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    }
+    .aantal_box input {
+        &::placeholder {
+            color: rgb(88, 88, 88);
+        }
+    }
+    .button_box {
+        background-color: rgb(84, 119, 125);
+
+        button {
+            width: 100%;
+            height: 3rem;
+            margin: 0 auto;
+            font-size: 20px;
+            letter-spacing: 2px;
+            border: none;
+            box-shadow: none;
+            
+            &:disabled {
+                color: rgba(255, 255, 255, 0.4);
+                background: rgb(144,144,144);
+                background: rgb(106,105,105);
+                background: linear-gradient(180deg, rgba(106,105,105,.6) 0%, rgba(131,131,131,.6) 15%,
+                rgba(144,144,144,.6) 30%, rgba(152,152,152,.6) 45%, rgba(152,152,152,.6) 55%,
+                rgba(144,144,144,.6) 70%, rgba(131,131,131,.6) 85%, rgba(106,105,105,.6) 100%);
+            }
+            &:enabled {
+                color: white;
+                background: rgb(13,69,38);
+                background: linear-gradient(180deg, rgba(13,69,38,.6) 0%, rgba(18,99,55,.6) 15%,
+                rgba(21,119,66,.6) 30%, rgba(23,131,73,.6) 45%, rgba(23,131,73,.6) 55%,
+                rgba(21,119,66,.6) 70%, rgba(18,99,55,.6) 85%, rgba(13,69,38,.6) 100%);
+            }
+        }
+    }
+    .table_box {
+        display: block;
+        width: 80%;
+        min-height: 400px;
+        padding: 1rem 0 0 0;
+        background-color: rgb(84, 119, 125);
+        border-top: none;
+        border-bottom: none;
+
+        #mandje {
+            width: 100%;
+            margin: 0 auto;
+            padding: .6rem 0;
+
+            #mandjeTable {
+                width: 98%;
+                margin: 0 auto;
+                border-collapse: separate;
+                border-spacing: 4px;
+                background: rgb(181, 181, 181);
+                border: 1px solid rgb(77, 77, 77);
+
+                #mandjeTHead {
+                    width: 96%;
+
+                    #titleRow {
+                        width: 100%;
+                        background: rgba(57, 119, 86, 0.6);
+                        font-weight: bold;
+                    
+                        th {
+                            column-span: 1;
+                            margin: 0 0;
+                            padding: 6px 0 6px 6px;
+                            color: white;
+                            font-size: 20px;
+                            text-align: left;
+                            letter-spacing: 1px;
+                            text-shadow: 1px 1px 2px black;
+                            background: transparent;
+                            border-right: 2px solid rgb(77, 77, 77);
+                            border-bottom: 1px solid rgb(77, 77, 77);
+                        }
+                        #naamTitle {
+                            width: 190px;
+                            max-width: 190px;
+                        }
+                        #prijsTile {
+                            //width: 65px;
+                            max-width: 65px;
+                        }
+                        #aantalTitle {
+                            //width: 65px;
+                            max-width: 65px;
+                        }
+                        #totaalTitle {
+                            width: 130px;
+                            max-width: 130px;
+                        }
+                        #deleteTitle {
+                            //width: 30px;
+                            max-width: 20px;
+                            padding: 4px 0;
+                            font-size: 18px;
+                            text-align: center;
+                        }
+                    }
+                }
+                #mandjeTBody {
+                    width: 96%;
+
+                    .groente_rij {
+                        width: 100%;
+    
+                        td {
+                            margin: 0 0;
+                            padding: 4px 6px 3px 0;
+                            color: rgb(70, 78, 94);
+                            text-align: right;
+                            font-size: 16px;
+                            text-transform: capitalize;
+                            background: transparent;
+                            border-right: 2px solid rgb(121, 121, 121);
+                            border-bottom: 1px solid rgb(121, 121, 121);
+                        }
+                        
+                        .naam {
+                            width: 190px;
+                            max-width: 190px;
+                            color: rgb(48, 83, 89);
+                            font-size: 18px;
+                            font-weight: bold;
+                        }
+                        .prijs {
+                            //width: 65px;
+                            max-width: 65px;
+                        }
+                        .aantal {
+                            //width: 65px;
+                            max-width: 65px;
+                        }
+                        .totaal {
+                            width: 130px;
+                            max-width: 130px;
+                            overflow: hidden;
+                            overflow-x: scroll;
+                        }
+                        .remove {
+                            //width: 30px;
+                            max-width: 20px;
+                            padding: 0 0;
+                            //border: 1px solid rgb(77, 77, 77);
+                            border-right: 2px solid rgb(77, 77, 77);
+                            border-bottom: 1px solid rgb(77, 77, 77);
+                            //background: rgba(96, 0, 0, 0.7);
+                    
+                            a {
+                                width: 100%;
+                                padding: 7px 0 6px 0;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: center;
+                                //background: rgba(121, 132, 126, 0.8);
+                                background: rgba(96, 0, 0, 0.7);
+                    
+                                img {
+                                    width: 16px;
+                                    height: 16px;
+                                    //border: 1px solid white;
+                                    //border: 1px solid rgb(82, 90, 86);
+                                    //border-radius: 50%;
+                                }
+                            }
+                        }
+                    }
+                    tr:nth-child(even) {
+                        background-color: rgb(255, 255, 255);
+                    }
+                    tr:nth-child(odd) {
+                        background-color: rgb(212, 212, 212);
+                    }
+                }
+                #mandjeTFoot {
+                    width: 96%;
+
+                    #totaal_rij {
+                        width: 100%;
+                        background: rgba(121, 132, 126, 0.8);
+                        //background: rgba(23, 131, 73, 0.6);
+                        
+                        td {
+                            margin: 0 0;
+                            padding: 5px 6px 3px 0;
+                            //color: rgb(44, 45, 47);
+                            color: white;
+                            text-align: right;
+                            font-size: 18px;
+                            text-transform: capitalize;
+                            text-shadow: 1px 1px 2px black;
+                            background: transparent;
+                            //border-right: 2px solid rgb(121, 121, 121);
+                            //border-bottom: 1px solid rgb(121, 121, 121);
+                            border-right: 2px solid rgb(77, 77, 77);
+                            border-bottom: 1px solid rgb(77, 77, 77);
+                        }
+                        .totaalTitel {
+                            font-weight: bold;
+                            letter-spacing: 2px;
+                        }
+                        .empty {
+                            //width: 35px;
+                            max-width: 20px;
+                            padding: 5px 0 3px 6px;
+                            text-align: left;
+                            background: transparent;
+                            //background: rgb(181, 181, 181);
+                            //border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
