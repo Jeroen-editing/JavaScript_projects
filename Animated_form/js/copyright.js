@@ -1,15 +1,15 @@
 let rightsBox = document.getElementById('rights');
 
 function copyRight() {
-    let developer = "Jeroen De Vos ";
+    let developer = '<a href="mailto:jdv.editing@gmail.com?subject=Saw your portfolio.">Jeroen De Vos </a>';
     let text = "Created by: <b>" + developer + "</b> ";
     let land = " Antwerp&bull;Belgium ";
-    let email = " <b>jdv.editing@gmail.com</>";
     
     let now = new Date();
-    let date = " june " + now.getFullYear() + " ";
+    let date = "june " + now.getFullYear() + " ";
+    date = "june 2021 "
 
-    let Year = text + "&hyphen;" + date + "&hyphen;" + land + "&hyphen;" + email;
+    let Year = text + date + "&hyphen;" + land;
     rightsBox.innerHTML = Year + ' ';
 }
 

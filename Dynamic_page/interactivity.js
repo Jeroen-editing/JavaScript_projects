@@ -286,7 +286,7 @@ slider.addEventListener('mouseup', () => {
     slider.classList.remove('drag');
 });
 
-slider.addEventListener('mousemove', () => {
+slider.addEventListener('mousemove', (e) => {
     if(!isDown) return;
 
     e.preventDefault();
@@ -300,7 +300,7 @@ slider.addEventListener('mousemove', () => {
 
 
 //---------------- FLEX PANELS ------------------//
-console.log(window_width);
+//console.log(window_width);
 if (window_width < 768) {
     const panel_box = document.getElementById('panel_box');
     panel_box.classList.replace('photo_panels_box', 'replace_box')

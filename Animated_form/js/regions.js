@@ -20,5 +20,16 @@ function hidePopUp() {
 }
 
 regionButton.addEventListener('mouseover', showPopUp);
+regionButton.addEventListener('click', showPopUp);
 
 popUp.addEventListener('mouseleave' , hidePopUp);
+document.getElementById('close_btn').addEventListener('click' , hidePopUp);
+
+document.getElementById('psswSigns').addEventListener('mouseover', () => 
+    document.getElementById('eye').src = 'assets/icons/eye_green.png'
+);
+document.getElementById('psswSigns').addEventListener('mouseout', () => 
+    document.getElementById('eye').src = 'assets/icons/eye_grey.png'
+);
+document.querySelector('body').onscroll = () => 
+    document.querySelector('.header_box').style.borderBottom = "1px solid rgb(212, 212, 212)";
